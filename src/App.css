@@ -7,8 +7,8 @@ body {
 }
 
 .cards-container {
-    perspective:250;
-    width: 300px;
+    perspective:250px;
+    width: 150px;
     height: 150px;
     position: relative;
 
@@ -16,21 +16,21 @@ body {
 
 .cards {
     width: 50px;
-    height: 80px;
+    height: 100px;
     background-color: #442222;
     font-size: 40px;
     position: absolute;
     top: 35px;
-    left: 125px;
+    left: 25px;
     border-radius: 8px;
     text-align: center;
     cursor: pointer;
-    animation: Carrusel 8s linear infinite;
+    animation: Carrusel 7s linear infinite;
 }
 
 @keyframes Carrusel {
     from {
-        transform: rotateY(360deg)translateZ(100px);
+        transform: rotateY(360deg)translateZ(150px);
         z-index: 10;
         opacity: 0.9;
     }
@@ -40,7 +40,7 @@ body {
     }
 
     to {
-        transform: rotateX(0deg) translateZ(100px);
+        transform: rotateX(0deg) translateZ(150px);
         z-index: 10;
     }
 }
@@ -56,6 +56,7 @@ body {
     background-image: url(images/cripto.jpg);
     background-size: cover;
     animation-delay: -1s;
+
 }
 #bake:hover {
     box-shadow: 0px 0px 10px green;
@@ -65,6 +66,7 @@ body {
     background-image: url(images/bullvsbear.jpg);
     background-size: cover;
     animation-delay: -2s;
+
 }
 #baka:hover {
     box-shadow: 0px 0px 10px green;
@@ -73,6 +75,7 @@ body {
     background-image: url(images/operaciones.jpg);
     background-size: cover;
     animation-delay: -3s;
+
 }
 #buk:hover {
     box-shadow: 0px 0px 10px green;
@@ -81,6 +84,7 @@ body {
     background-image: url(images/acciones.jpg);
     background-size: cover;
     animation-delay: -4s;
+
 }
 #bok:hover {
     box-shadow: 0px 0px 10px green;
@@ -89,6 +93,7 @@ body {
     background-image: url(images/bonos.jpg);
     background-size: cover;
     animation-delay: -5s;
+
 }
 #bik:hover {
     box-shadow: 0px 0px 10px green;
@@ -97,6 +102,7 @@ body {
     background-image: url(images/indices.jpg);
     background-size: cover;
     animation-delay: -6s;
+
 }
 #bek:hover {
     box-shadow: 0px 0px 10px green;
@@ -105,15 +111,15 @@ body {
     background-image: url(images/futuros.jpg);
     background-size: cover;
     animation-delay: -7s;
+
 } 
 #bak:hover {
     box-shadow: 0px 0px 10px green;
 }
 .cards h3 {
     color: white;
-    font-size: 5px;
+    font-size: 8px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 70px;
     background-color: red;
 
 }
