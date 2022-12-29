@@ -24,7 +24,8 @@ const Login= () => {
       <Button variant="primary" type="submit">
         Submit
       </Button>
-      <Link to='/SignIn'>Register</Link>
+      <Link to='/signin'>Register</Link>
+      <Link to='/inicio'>Inicio</Link>
     </Form>
   );
 }
