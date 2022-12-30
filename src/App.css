@@ -10,12 +10,14 @@ body {
     perspective:250px;
     width: 150px;
     height: 150px;
+    margin-bottom:20rem;
+    margin-left: 40rem;
     position: relative;
 
 }
 
 .cards {
-    width: 50px;
+    width: 80px;
     height: 100px;
     background-color: #442222;
     font-size: 40px;
@@ -25,7 +27,7 @@ body {
     border-radius: 8px;
     text-align: center;
     cursor: pointer;
-    animation: Carrusel 7s linear infinite;
+    animation: Carrusel 8s linear infinite;
 }
 
 @keyframes Carrusel {
@@ -121,5 +123,113 @@ body {
     font-size: 8px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: red;
+}
+.mod{
+    width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: rgba(0,0,0,0.5);
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+    z-index: 1;
+}
+#botonModal:checked ~ .mod{
+	opacity: 1;
+	visibility: visible;
+} 
+.conten{
+	width: 300px;
+	height: 300px;
+    margin: auto;
+	background: #fff;
+	box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
+	transition: all 500ms ease;
+	position: relative;
+	transform: translateY(-30%);
+    border-radius: 10px;
+}
+#botonModal:checked ~ .mod .conten{
+	transform: translateY(0%);
+} 
+.conten p {
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    width: 100%;
+    background: #291;
+	color: #fff;
+}
+.conten label{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #fff;
+	font-size: 15px;
+	cursor: pointer;
+}
+.conteni{
+    width: 100%;
+    height: 18rem;
+    margin-right: 88rem;
+}
+.conteni input{
+    margin-top: 15px;
+}
+#botonModal{
+	display: none;
+}
+.tlmodal{
+    width: 6rem;
+    position: absolute;
+    margin-top:15px ;
+    background: #fff;
+	padding: 10px 15px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px #08a05ca4;
+    border-radius: 15px;
+	cursor: pointer;
+    z-index: 1;
+}
+.name{
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height:3rem;
+    box-shadow: 0 3px 6px #08a05ca4;
+    border-radius: 5px;
+}
+.namex{
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height:3em;
+    box-shadow: 0 3px 6px #08a05ca4;
+    border-radius: 5px;
+}
+#subm button{
+    
+ width: 8rem;
+ height: 2.7rem;
+   display: block;
+   margin: auto;
+   padding: -2px;
+   box-shadow: 0 2px 6px #08a05ca4;
+}
+#subm p {
+    background:fixed ;
+    color: red;
+    font-size: small;
 
+}
+#subm:hover{
+    color: white;
 }
