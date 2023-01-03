@@ -1,29 +1,25 @@
 body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #222;
 }
 
 .cards-container {
     perspective:250px;
-    width: 150px;
-    height: 150px;
-    margin-bottom:20rem;
-    margin-left: 40rem;
+    width: 300px;
+    height: 150px; 
     position: relative;
-
+    top: 15rem;
+    left: 25rem;
+    
 }
 
 .cards {
-    width: 80px;
-    height: 100px;
+    width: 50px;
+    height: 80px;
     background-color: #442222;
     font-size: 40px;
     position: absolute;
     top: 35px;
-    left: 25px;
+    left:200px;
     border-radius: 8px;
     text-align: center;
     cursor: pointer;
@@ -122,6 +118,7 @@ body {
     color: white;
     font-size: 8px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 70px;
     background-color: red;
 }
 .mod{
@@ -177,8 +174,8 @@ body {
 }
 .conteni{
     width: 100%;
-    height: 18rem;
-    margin-right: 88rem;
+    /* height: 18rem; */
+    /* margin-right: 88rem; */
 }
 .conteni input{
     margin-top: 15px;
@@ -232,4 +229,36 @@ body {
 }
 #subm:hover{
     color: white;
+}
+
+.modal {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;height: 100vh;
+    background-color: rgba(0,0,0,0.75);
+    display:  none;
+    justify-content: center;
+    align-items: center;
+}
+.modal.is-open {
+    display:  flex;
+}
+.modal-container{
+    position: relative;
+    padding: 1rem;
+    min-width: 320px;
+    max-width: 480px;
+    min-height: 200px;
+    min-height: 600px;
+    overflow-y: auto;
+    background-color: #fff;
+
+
+}
+.modal-close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }
