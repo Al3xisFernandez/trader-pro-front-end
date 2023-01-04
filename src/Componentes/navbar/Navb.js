@@ -2,9 +2,14 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Modals from '../modal/Modals';
+import CerrarSesion from '../login/CerrarSesion';
+import Login from '../login/Login';
+import Perfil from '../perfiles/Perfil';
+import { useAuth0 } from '@auth0/auth0-react';
 
 function Navb() {
+  const {isAuthenticated} = useAuth0();
+
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
@@ -27,7 +32,12 @@ function Navb() {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Modals />
+          {isAuthenticated ? <>
+           <Perfil />
+            <CerrarSesion />
+            </>
+            : <Login />
+            }
           </Nav>
         </Navbar.Collapse>
       </Container>
