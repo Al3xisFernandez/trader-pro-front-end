@@ -13,12 +13,12 @@ function Navb() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="">TraderPro</Navbar.Brand>
+        <Navbar.Brand href="/">TraderPro</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/inicio">Inicio</Nav.Link>
-            <Nav.Link href="#pricing">Quienes somos</Nav.Link>
+            <Nav.Link href="/">Inicio</Nav.Link>
+            <Nav.Link href="/QuienesSomos">Quienes somos</Nav.Link>
             <NavDropdown title="Contactos" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Numero</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">

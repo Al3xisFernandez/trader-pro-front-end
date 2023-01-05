@@ -1,3 +1,8 @@
+body {
+    background-image: url(https://www.economiasimple.net/wp-content/uploads/2018/05/funcionamiento-mercado-financiero-1200x900.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .cards-container {
     perspective:250px;
     width: 300px;
@@ -5,7 +10,6 @@
     position: relative;
     top: 15rem;
     left: 25rem;
-    
 }
 
 .cards {
@@ -116,4 +120,49 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 70px;
     background-color: red;
+}
+.perfil{
+    height: 2rem;
+    display: flex;
+}
+.perfil img {
+    height: 2rem;
+    border-radius: 1rem;
+}
+.perfil h6 {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: .5rem;
+   color: #fffefe;
+}
+.cerrarsesion{
+    font-size:x-small;
+    width: 5.5rem;
+    height: 2rem;
+    border-radius: 1rem;
+}
+.login{
+    font-size:x-small;
+    width: 5.5rem;
+    height: 2rem;
+    border-radius: 1rem;
+}
+.contenedor-QuienesSomos{
+    padding-top: 10rem;
+    text-align: center;
+    justify-content: center;
+    color: black;
+}
+.contenedor-QuienesSomos ul li {
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 0 2px 6px #000000a4;
+}
+.contenedor-QuienesSomos  img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px #000000a4;
+    padding: 15px;
+    margin: 30px;
 }

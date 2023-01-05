@@ -7,10 +7,9 @@ export default function Perfil () {
     }
     return (
         isAuthenticated && (
-            <div>
+            <div className="perfil">
                 <img src={user.picture} alt={user.name}/>
-                <h2>{user.name}</h2>
-                <p>Email:{user.email}</p>
+                <h6>{user.name}</h6>
             </div>
         )
     )
