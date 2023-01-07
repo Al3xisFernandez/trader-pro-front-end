@@ -3,8 +3,8 @@ import "boxicons";
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="container">
-        <h4>E-commerce</h4>
+      <div className="containfooter">
+        <h4>TraderPRo</h4>
         <ul className="List">
           <li>
             <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
@@ -25,7 +25,7 @@ const Footer = () => {
           </li>
         </ul>
         <small>
-          &copy; Copyright 2022.E-commerce | Todos los derechos reservados.
+          &copy; Copyright 2022.TraderPRo | Todos los derechos reservados.
         </small>
       </div>
     </div>

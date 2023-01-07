@@ -7,7 +7,7 @@ const Pages = () => {
     return (
         <section>
             <Switch>
-                <Route path="/inicio"  exact component={Inicio}/>
+                <Route path="/"  exact component={Inicio}/>
                 <Route path="/Login" exact component={Login} />
                 <Route path="/QuienesSomos" exact component={QuienesSomos} />
             </Switch>

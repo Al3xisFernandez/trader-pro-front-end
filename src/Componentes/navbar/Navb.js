@@ -6,6 +6,7 @@ import CerrarSesion from '../login/CerrarSesion';
 import Login from '../login/Login';
 import Perfil from '../perfiles/Perfil';
 import { useAuth0 } from '@auth0/auth0-react';
+import 'boxicons/css/boxicons.min.css';
 
 function Navb() {
   const {isAuthenticated} = useAuth0();
@@ -20,13 +21,13 @@ function Navb() {
             <Nav.Link href="/">Inicio</Nav.Link>
             <Nav.Link href="/QuienesSomos">Quienes somos</Nav.Link>
             <NavDropdown title="Contactos" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Numero</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Numero
+              <NavDropdown.Item href="tel:543814982513">Numero</NavDropdown.Item>
+              <NavDropdown.Item href="mailto:alexxxfernandez50@gmail.com">
+                Correo
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Instagram</NavDropdown.Item>
+              <NavDropdown.Item href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
+              <NavDropdown.Item className="bx bx-help-circle" href="">
                 Ayuda
               </NavDropdown.Item>
             </NavDropdown>

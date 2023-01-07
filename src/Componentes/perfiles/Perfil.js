@@ -12,6 +12,6 @@ export default function Perfil () {
                 <h6>{user.name}</h6>
             </div>
         )
-    )
+    );
 
 };
