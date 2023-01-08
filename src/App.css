@@ -1,206 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); 
+
+
+
+.navbar {
+  min-height: 10vh;
+}
+main {
+  display: flex;
+  justify-content: center;
+  min-height: 75vh;
+}
+
 .app {
-    background-color: black;
+    font-size: large;
+  background-color: black;
+  font-family:'Open Sans', sans-serif;
 }
 .cards-container {
-    perspective:250px;
-    width: 300px;
-    height: 150px; 
-    position: relative;
-    top: 15rem;
-    left: 25rem;
+  perspective: 250px;
+  width: 500px;
+  height: 150px;
+  margin: auto;
+}
+.container-container {
+  display: flex;
+  justify-content: center;
 }
 
 .cards {
-    width: 50px;
-    height: 80px;
-    background-color: #442222;
-    font-size: 40px;
-    position: absolute;
-    top: 35px;
-    left:200px;
-    border-radius: 8px;
-    text-align: center;
-    cursor: pointer;
-    animation: Carrusel 8s linear infinite;
+  width: 50px;
+  height: 80px;
+  background-color: #442222;
+  font-size: 40px;
+  position: absolute;
+  top: 35px;
+  left: 220px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  animation: Carrusel 8s linear infinite;
 }
 
 @keyframes Carrusel {
-    from {
-        transform: rotateY(360deg)translateZ(150px);
-        z-index: 10;
-        opacity: 0.9;
-    }
+  from {
+    transform: rotateY(360deg) translateZ(160px);
+    z-index: 10;
+    opacity: 0.9;
+  }
 
-    50% {
-        z-index: -10;
-    }
+  50% {
+    z-index: -10;
+  }
 
-    to {
-        transform: rotateX(0deg) translateZ(150px);
-        z-index: 10;
-    }
+  to {
+    transform: rotateX(0deg) translateZ(160px);
+    z-index: 10;
+  }
 }
 
 #baki {
-    background-image: url(images/trading.jpg);
-    background-size: cover;
+  background-image: url(images/trading.jpg);
+  background-size: cover;
 }
 #baki:hover {
-    box-shadow: 0px 0px 10px green;
+  box-shadow: 0px 0px 10px green;
 }
 #bake {
-    background-image: url(images/cripto.jpg);
-    background-size: cover;
-    animation-delay: -1s;
-
+  background-image: url(images/cripto.jpg);
+  background-size: cover;
+  animation-delay: -1s;
 }
 #bake:hover {
-    box-shadow: 0px 0px 10px green;
+  box-shadow: 0px 0px 10px green;
 }
 
- #baka {
-    background-image: url(images/bullvsbear.jpg);
-    background-size: cover;
-    animation-delay: -2s;
-
+#baka {
+  background-image: url(images/bullvsbear.jpg);
+  background-size: cover;
+  animation-delay: -2s;
 }
 #baka:hover {
-    box-shadow: 0px 0px 10px green;
+  box-shadow: 0px 0px 10px green;
 }
 #buk {
-    background-image: url(images/operaciones.jpg);
-    background-size: cover;
-    animation-delay: -3s;
-
+  background-image: url(images/operaciones.jpg);
+  background-size: cover;
+  animation-delay: -3s;
 }
 #buk:hover {
-    box-shadow: 0px 0px 10px green;
+  box-shadow: 0px 0px 10px green;
 }
 #bok {
-    background-image: url(images/acciones.jpg);
-    background-size: cover;
-    animation-delay: -4s;
-
+  background-image: url(images/acciones.jpg);
+  background-size: cover;
+  animation-delay: -4s;
 }
 #bok:hover {
-    box-shadow: 0px 0px 10px green;
+  box-shadow: 0px 0px 10px green;
 }
 #bik {
-    background-image: url(images/bonos.jpg);
-    background-size: cover;
-    animation-delay: -5s;
-
+  background-image: url(images/bonos.jpg);
+  background-size: cover;
+  animation-delay: -5s;
 }
 #bik:hover {
-    box-shadow: 0px 0px 10px green;
+  box-shadow: 0px 0px 10px green;
 }
 #bek {
-    background-image: url(images/indices.jpg);
-    background-size: cover;
-    animation-delay: -6s;
-
+  background-image: url(images/indices.jpg);
+  background-size: cover;
+  animation-delay: -6s;
 }
 #bek:hover {
-    box-shadow: 0px 0px 10px green;
+  box-shadow: 0px 0px 10px green;
 }
 #bak {
-    background-image: url(images/futuros.jpg);
-    background-size: cover;
-    animation-delay: -7s;
-    
-} 
+  background-image: url(images/futuros.jpg);
+  background-size: cover;
+  animation-delay: -7s;
+}
 #bak:hover {
-    box-shadow: 0px 0px 10px green;
+  box-shadow: 0px 0px 10px green;
 }
 .cards h3 {
-    color: white;
-    font-size: 8px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 70px;
-    background-color: red;
+  color: white;
+  font-size: 8px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 70px;
+  background-color: red;
 }
-.perfil{
-    height: 2rem;
-    display: flex;
+.perfil {
+  height: 2rem;
+  display: flex;
 }
 .perfil img {
-    height: 2rem;
-    border-radius: 1rem;
+  height: 2rem;
+  border-radius: 1rem;
 }
 .perfil h6 {
-    padding-right: 1rem;
-    padding-left: 1rem;
-    padding-top: .5rem;
-   color: #fffefe;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  color: #fffefe;
 }
-.cerrarsesion{
-    font-size:x-small;
-    width: 5.5rem;
-    height: 2rem;
-    border-radius: 1rem;
+.cerrarsesion {
+  font-size: x-small;
+  width: 5.5rem;
+  height: 2rem;
+  border-radius: 1rem;
 }
-.login{
-    font-size:x-small;
-    width: 5.5rem;
-    height: 2rem;
-    border-radius: 1rem;
+.login {
+  font-size: x-small;
+  width: 5.5rem;
+  height: 2rem;
+  border-radius: 1rem;
 }
-.contenedor-QuienesSomos{
-    text-align: center;
-    justify-content: center;
-    color: white;
+.contenedor-QuienesSomos {
+  text-align: center;
+  justify-content: center;
+  color: white;
 }
 .contenedor-QuienesSomos ul li {
-    width: 80%;
-    display: block;
-    margin: auto;
-    border-radius: 1rem;
-    margin-top: 1rem;
-    box-shadow: 0 2px 6px #fffafaa4;
-    list-style: none;
+  width: 80%;
+  display: block;
+  margin: auto;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  box-shadow: 0 2px 6px #fffafaa4;
+  list-style: none;
 }
 .contenedor-QuienesSomos h1 {
-    box-shadow: 0 2px 6px #ffffffa4;
-    width: 20%;
-   display: block;
-   margin: auto;
-   border-radius: 1rem;
-   margin-top: 1rem;
+  box-shadow: 0 2px 6px #ffffffa4;
+  width: 20%;
+  display: block;
+  margin: auto;
+  border-radius: 1rem;
+  margin-top: 1rem;
 }
-.contenedor-QuienesSomos  img {
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    box-shadow: 0 2px 6px #fffefea4;
-    padding: 15px;
-    margin: 30px;
+.contenedor-QuienesSomos img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px #fffefea4;
+  padding: 15px;
+  margin: 30px;
 }
 .containfooter {
-    background-color: black;
-    width: 100%;
-    height: 130px;
-    box-shadow: 0 2px 6px #ffffffa4;
-    display: flex;
-    margin-top: 500px;
-    color: #fffefe;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: #fffefe;
 }
-.containfooter h4{
-    margin-bottom: 40px ;
+footer {
+  display: flex;
+  flex-direction: column;
+  min-height: 15vh;
+  border: 1px solid #202020;
+  -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
 }
+
+footer p {
+  vertical-align: bottom;
+  text-align: center;
+  margin-top: auto;
+}
+
 .containfooter ul {
-    display: block;
-    margin: auto;
+  padding: 0 0 0 0;
+  display: block;
+  margin: auto;
 }
-.containfooter box-icon{
-    margin:15px ;
-    fill: white;
+.containfooter box-icon {
+  margin: 15px;
+  fill: white;
 }
 .containfooter li {
-    list-style: none;
+  list-style: none;
 }
 .containfooter small {
+  display: flex;
+  flex-wrap: wrap;
+  height: 8em;
+  align-content: flex-end;
+}
+
+.footer-a a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-a a:hover {
+  color: grey;
+}
+
+@media only screen and (max-width: 425px) {
+  @keyframes Carrusel {
+    from {
+      transform: rotateY(360deg) translateZ(120px);
+      z-index: 10;
+      opacity: 0.9;
+    }
+
+    50% {
+      z-index: -10;
+    }
+
+    to {
+      transform: rotateX(0deg) translateZ(120px);
+      z-index: 10;
+    }
+  }
+  .cards-container {
+    width: 400px;
+  }
+
+  .cards {
+    left: 175px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .containfooter {
+    text-align: center;
     display: flex;
-    flex-wrap: wrap;
-    height: 8em; 
-    align-content: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 426px) {
+  .cards {
+    left: 235px;
+  }
 }
