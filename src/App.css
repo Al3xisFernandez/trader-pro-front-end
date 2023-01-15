@@ -197,15 +197,19 @@ footer {
   flex-direction: column;
   min-height: 15vh;
   border: 1px solid #202020;
-  -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+  /* -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75); */
+  /* -moz-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75); */
   box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
 }
 
 footer p {
   vertical-align: bottom;
-  text-align: center;
+  text-align: end;
   margin-top: auto;
+  color: white;
+  font-size: x-small;
+ 
+  
 }
 
 .containfooter ul {
@@ -235,7 +239,7 @@ footer p {
 }
 
 .footer-a a:hover {
-  color: grey;
+  color: rgb(211, 194, 194);
 }
 
 @media only screen and (max-width: 425px) {
@@ -273,6 +277,7 @@ footer p {
     align-items: center;
   }
 }
+
 
 @media only screen and (max-width: 1024px) and (min-width: 426px) {
   .cards {
