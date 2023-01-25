@@ -3,6 +3,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { MyVerticallyCenteredModal, App } from '../modal/Modal';
+import { App1, MyModal } from '../modal/ModalInicioSesion';
+import Perfil from '../perfiles/Perfil';
 function Navb() {
   return (
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -28,6 +30,9 @@ function Navb() {
             <Nav>
               <MyVerticallyCenteredModal />
               <App />
+              <MyModal />
+              <App1 />
+              <Perfil />
             </Nav>
         </Navbar.Collapse>
       </Container>

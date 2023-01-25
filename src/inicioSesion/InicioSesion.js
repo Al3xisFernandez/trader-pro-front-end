@@ -1,9 +1,9 @@
 import { React, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import { Api } from "../../servicio/api";
+import { Api } from "../servicio/api";
 
-const Login = () => {
+const InicioSesion = () => {
   const [formValues, setFormValues] = useState({
     email: "",
     password: "",
@@ -62,4 +62,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default InicioSesion;

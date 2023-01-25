@@ -2,8 +2,7 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import InicioSesion from '../../inicioSesion/InicioSesion';
-
-export function MyVerticallyCenteredModal(props) {
+export function MyModal(props) {
   return (
     <Modal 
       {...props}
@@ -21,15 +20,15 @@ export function MyVerticallyCenteredModal(props) {
     </Modal>
   );
 }
-export function App() {
+export function App1() {
   const [modalShow, setModalShow] = React.useState(false);
 
   return (
     <>
        <Button id="btnreg" variant="primary" onClick={() => setModalShow(true)}>
-        Registrarse
+        Ingresar
       </Button>
-      <MyVerticallyCenteredModal
+      <MyModal
         show={modalShow}
         onHide={() => setModalShow(false)}
       />

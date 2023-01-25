@@ -284,3 +284,36 @@ footer p {
     left: 235px;
   }
 }
+#btnregistro{
+   display: block;
+  text-align: center;
+}
+#btnregistro button {
+  width: 10rem;
+  height: 3rem;
+  border-radius:2rem ;
+  color: white;
+  background-color: black;
+}
+#btnregistro button:hover{
+  color: rgb(247, 239, 239);
+  background-color: rgb(83, 82, 82);
+}
+#btnreg{
+width: 10rem;
+  height: 3rem;
+  border-radius:2rem ;
+  color: rgb(167, 158, 158);
+  background-color: transparent;
+  border: none;
+}
+#btnreg:hover{
+  color: rgb(207, 203, 203);
+  background-color: none;
+}
+#modalbody{
+width: 25rem;
+}
+#btnontent{
+  width: 25rem;
+}
