@@ -1,18 +1,25 @@
-import Accordion from 'react-bootstrap/Accordion';
-
-function Perfil () {
+function Perfil() {
   return (
-
-    <Accordion defaultActiveKey="0">
-      <Accordion.Item  eventKey="0">
-        <Accordion.Header>Perfil</Accordion.Header>
-        <Accordion.Body >
-         
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
- 
-
+    <nav>
+      <ul>
+        <li>
+          <box-icon name="user-circle">
+            <p>Perfil</p>
+          </box-icon>
+          <ul>
+            <li>
+              <a href="#"></a>Centro de tareas
+            </li>
+            <li>
+              <a href="#"></a>Programas de referidos
+            </li>
+            <li>
+              <a href="#"></a>Configuraciones
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
   );
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import InicioSesion from '../../inicioSesion/InicioSesion';
+import Login from '../login/Login';
 
 export function MyVerticallyCenteredModal(props) {
   return (
@@ -15,13 +15,13 @@ export function MyVerticallyCenteredModal(props) {
       <Modal.Header closeButton>
       </Modal.Header>
       <Modal.Body id='modalbody'>
-       <InicioSesion />
+     <Login />
       </Modal.Body>
      
     </Modal>
   );
 }
-export function App() {
+export function Appr() {
   const [modalShow, setModalShow] = React.useState(false);
 
   return (

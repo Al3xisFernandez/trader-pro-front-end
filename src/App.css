@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 
 
 .navbar {
   min-height: 10vh;
 }
+
 main {
   display: flex;
   justify-content: center;
@@ -12,16 +13,18 @@ main {
 }
 
 .app {
-    font-size: large;
+  font-size: large;
   background-color: black;
-  font-family:'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
+
 .cards-container {
   perspective: 250px;
   width: 500px;
   height: 150px;
   margin: auto;
 }
+
 .container-container {
   display: flex;
   justify-content: center;
@@ -62,14 +65,17 @@ main {
   background-image: url(images/trading.jpg);
   background-size: cover;
 }
+
 #baki:hover {
   box-shadow: 0px 0px 10px green;
 }
+
 #bake {
   background-image: url(images/cripto.jpg);
   background-size: cover;
   animation-delay: -1s;
 }
+
 #bake:hover {
   box-shadow: 0px 0px 10px green;
 }
@@ -79,49 +85,61 @@ main {
   background-size: cover;
   animation-delay: -2s;
 }
+
 #baka:hover {
   box-shadow: 0px 0px 10px green;
 }
+
 #buk {
   background-image: url(images/operaciones.jpg);
   background-size: cover;
   animation-delay: -3s;
 }
+
 #buk:hover {
   box-shadow: 0px 0px 10px green;
 }
+
 #bok {
   background-image: url(images/acciones.jpg);
   background-size: cover;
   animation-delay: -4s;
 }
+
 #bok:hover {
   box-shadow: 0px 0px 10px green;
 }
+
 #bik {
   background-image: url(images/bonos.jpg);
   background-size: cover;
   animation-delay: -5s;
 }
+
 #bik:hover {
   box-shadow: 0px 0px 10px green;
 }
+
 #bek {
   background-image: url(images/indices.jpg);
   background-size: cover;
   animation-delay: -6s;
 }
+
 #bek:hover {
   box-shadow: 0px 0px 10px green;
 }
+
 #bak {
   background-image: url(images/futuros.jpg);
   background-size: cover;
   animation-delay: -7s;
 }
+
 #bak:hover {
   box-shadow: 0px 0px 10px green;
 }
+
 .cards h3 {
   color: white;
   font-size: 8px;
@@ -129,37 +147,44 @@ main {
   margin-top: 70px;
   background-color: red;
 }
+
 .perfil {
   height: 2rem;
   display: flex;
 }
+
 .perfil img {
   height: 2rem;
   border-radius: 1rem;
 }
+
 .perfil h6 {
   padding-right: 1rem;
   padding-left: 1rem;
   padding-top: 0.5rem;
   color: #fffefe;
 }
+
 .cerrarsesion {
   font-size: x-small;
   width: 5.5rem;
   height: 2rem;
   border-radius: 1rem;
 }
+
 .login {
   font-size: x-small;
   width: 5.5rem;
   height: 2rem;
   border-radius: 1rem;
 }
+
 .contenedor-QuienesSomos {
   text-align: center;
   justify-content: center;
   color: white;
 }
+
 .contenedor-QuienesSomos ul li {
   width: 80%;
   display: block;
@@ -169,6 +194,7 @@ main {
   box-shadow: 0 2px 6px #fffafaa4;
   list-style: none;
 }
+
 .contenedor-QuienesSomos h1 {
   box-shadow: 0 2px 6px #ffffffa4;
   width: 20%;
@@ -177,6 +203,7 @@ main {
   border-radius: 1rem;
   margin-top: 1rem;
 }
+
 .contenedor-QuienesSomos img {
   width: 400px;
   height: 400px;
@@ -185,6 +212,7 @@ main {
   padding: 15px;
   margin: 30px;
 }
+
 .containfooter {
   background-color: black;
   width: 100%;
@@ -192,6 +220,7 @@ main {
   justify-content: space-around;
   color: #fffefe;
 }
+
 footer {
   display: flex;
   flex-direction: column;
@@ -208,8 +237,8 @@ footer p {
   margin-top: auto;
   color: white;
   font-size: x-small;
- 
-  
+
+
 }
 
 .containfooter ul {
@@ -217,13 +246,16 @@ footer p {
   display: block;
   margin: auto;
 }
+
 .containfooter box-icon {
   margin: 15px;
   fill: white;
 }
+
 .containfooter li {
   list-style: none;
 }
+
 .containfooter small {
   display: flex;
   flex-wrap: wrap;
@@ -232,7 +264,7 @@ footer p {
 }
 
 .footer-a a {
-  color: white;
+  color: rgb(167, 158, 158);
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -259,6 +291,7 @@ footer p {
       z-index: 10;
     }
   }
+
   .cards-container {
     width: 400px;
   }
@@ -284,36 +317,152 @@ footer p {
     left: 235px;
   }
 }
-#btnregistro{
-   display: block;
+
+#btnregistro {
+  display: block;
   text-align: center;
 }
+
 #btnregistro button {
   width: 10rem;
   height: 3rem;
-  border-radius:2rem ;
+  border-radius: 2rem;
   color: white;
-  background-color: black;
+  background-color: rgb(63, 58, 58);
+  border: none;
 }
-#btnregistro button:hover{
+
+#btnregistro button:hover {
   color: rgb(247, 239, 239);
   background-color: rgb(83, 82, 82);
 }
-#btnreg{
-width: 10rem;
+
+#btnreg {
+  width: 5rem;
   height: 3rem;
-  border-radius:2rem ;
   color: rgb(167, 158, 158);
   background-color: transparent;
   border: none;
 }
-#btnreg:hover{
+
+#btnreg:hover {
   color: rgb(207, 203, 203);
   background-color: none;
 }
-#modalbody{
-width: 25rem;
-}
-#btnontent{
+
+#modalbody {
   width: 25rem;
+  background-color: rgb(107, 102, 102);
+}
+
+#btnontent {
+  width: 25rem;
+}
+#formBasicEmail{
+  background-color: rgb(107, 102, 102);
+}
+#formBasicEmail:hover{
+  border: none;
+}
+#formBasicPassword{
+  background-color: rgb(107, 102, 102);
+}
+.modal-header{
+  background-color: rgb(107, 102, 102);
+}
+
+nav ul {
+  color: rgb(3, 3, 3);
+  list-style: none;
+  list-style: none;
+}
+
+nav li {
+line-height: 45px;  
+position: relative;
+}
+
+nav li ul {
+  position: absolute;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: rgb(155, 142, 142);
+  left: 1rem;
+}
+
+nav a:hover {
+  color: rgb(207, 197, 197);
+}
+
+nav li:hover ul {
+  display: block;
+  color: rgb(255, 214, 214);
+
+}
+
+nav li ul {
+  display: none;
+}
+
+nav>ul {
+  color: rgb(0, 0, 0);
+  display: table;
+  padding-right: 3rem;
+}
+
+nav li li {
+  width: 160%;
+  background-color: rgb(61, 58, 58);
+}
+
+nav>ul>li>ul {
+  top: 100%;
+  right: 0px;
+
+}
+div .dropdown-menu{
+    background-color: rgb(61, 58, 58);
+  }
+  a.dropdown-item{
+   color: rgb(189, 167, 167);
+ }
+   a.dropdown-item:hover{
+    color: rgb(221, 206, 206);
+        background:rgb(61, 58, 58) ;
+   }
+box-icon {
+  fill: white;
+  margin-top: .5rem !important;
+  border-radius: 9px;
+}
+.titulo-contain{
+  color: grey;
+  font-size: 20px;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.Login-contain{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Input-error{
+  border: 1px solid red;
+  color: red;
+  background: rosybrown;
+}
+.label-error{
+  
+}
+.label-alert{
+
+}
+.submit-button{
+  
 }
