@@ -7,8 +7,10 @@ import Perfil from "../perfiles/Perfil";
 function Navb() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Container>
-        <Navbar.Brand href="/">TraderPro</Navbar.Brand>
+      <Container id="navbar-container">
+        <Navbar.Brand id="navbar-logo" href="/"> <img 
+                    src={require('../../images/logo.png')}
+                    alt="TRADER PRO" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
