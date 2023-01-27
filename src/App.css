@@ -352,24 +352,14 @@ footer p {
 
 #modalbody {
   width: 25rem;
-  background-color: rgb(107, 102, 102);
 }
 
 #btnontent {
   width: 25rem;
 }
-#formBasicEmail{
-  background-color: rgb(107, 102, 102);
-}
-#formBasicEmail:hover{
-  border: none;
-}
-#formBasicPassword{
-  background-color: rgb(107, 102, 102);
-}
-.modal-header{
-  background-color: rgb(107, 102, 102);
-}
+
+
+
 
 nav ul {
   color: rgb(3, 3, 3);
@@ -378,8 +368,8 @@ nav ul {
 }
 
 nav li {
-line-height: 45px;  
-position: relative;
+  line-height: 25px;
+  position: relative;
 }
 
 nav li ul {
@@ -389,18 +379,17 @@ nav li ul {
 nav a {
   display: block;
   text-decoration: none;
-  color: rgb(155, 142, 142);
+  color: rgb(241, 223, 223);
   left: 1rem;
 }
 
 nav a:hover {
-  color: rgb(207, 197, 197);
+  color: rgb(221, 206, 206);
 }
 
 nav li:hover ul {
   display: block;
-  color: rgb(255, 214, 214);
-
+  color: rgb(221, 206, 206);
 }
 
 nav li ul {
@@ -421,48 +410,23 @@ nav li li {
 nav>ul>li>ul {
   top: 100%;
   right: 0px;
-
 }
-div .dropdown-menu{
-    background-color: rgb(61, 58, 58);
-  }
-  a.dropdown-item{
-   color: rgb(189, 167, 167);
- }
-   a.dropdown-item:hover{
-    color: rgb(221, 206, 206);
-        background:rgb(61, 58, 58) ;
-   }
+
+div .dropdown-menu {
+  background-color: rgb(61, 58, 58);
+}
+
+a.dropdown-item {
+  color: rgb(241, 223, 223);
+}
+
+a.dropdown-item:hover {
+  color: rgb(221, 206, 206);
+  background: rgb(59, 57, 57);
+}
+
 box-icon {
   fill: white;
   margin-top: .5rem !important;
   border-radius: 9px;
-}
-.titulo-contain{
-  color: grey;
-  font-size: 20px;
-  display: flex;  
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-}
-.Login-contain{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.Input-error{
-  border: 1px solid red;
-  color: red;
-  background: rosybrown;
-}
-.label-error{
-  
-}
-.label-alert{
-
-}
-.submit-button{
-  
 }

@@ -3,7 +3,6 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { MyVerticallyCenteredModal, Appr } from "../modal/Modal";
-import { App1, MyModal } from "../modal/ModalInicioSesion";
 import Perfil from "../perfiles/Perfil";
 function Navb() {
   return (
@@ -36,8 +35,6 @@ function Navb() {
             </NavDropdown>
           </Nav>
           <Nav>
-            <MyModal />
-            <App1 />
             <Appr /> <MyVerticallyCenteredModal />
             <Perfil />
           </Nav>

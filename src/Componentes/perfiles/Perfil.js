@@ -1,6 +1,7 @@
 function Perfil() {
   return (
-    <nav>
+    <div className="navProfile"> 
+     <nav>
       <ul>
         <li>
           <box-icon name="user-circle">
@@ -8,18 +9,19 @@ function Perfil() {
           </box-icon>
           <ul>
             <li>
-              <a href="#"></a>Centro de tareas
+              <a href="#">Centro de tareas</a>
             </li>
             <li>
-              <a href="#"></a>Programas de referidos
+              <a href="#">Programas de referidos</a>
             </li>
             <li>
-              <a href="#"></a>Configuraciones
+              <a href="#">Configuraciones</a>
             </li>
           </ul>
         </li>
       </ul>
     </nav>
+    </div>
   );
 }
 
