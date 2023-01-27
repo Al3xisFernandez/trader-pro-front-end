@@ -20,7 +20,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10%;
+  padding-top: 5%;
 }
 
 .cards-container {
@@ -247,7 +247,7 @@ footer p {
 
 .banner-text {
   width: 100%;
-  position: absolute;
+  position: relative;
   text-align: center;
   /* font-family: 'Aboreto', cursive;
 font-family: 'Abril Fatface', cursive;
@@ -268,6 +268,7 @@ font-family: 'Racing Sans One', cursive; */
 }
 
 .animation-area {
+  position: relative;
   background-image: linear-gradient(
     to right top,
     #2c3333,
@@ -425,6 +426,10 @@ font-family: 'Racing Sans One', cursive; */
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.cursos-section{
+  margin-top: 10vh;
 }
 
 @keyframes animate {

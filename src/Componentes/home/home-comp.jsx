@@ -3,6 +3,8 @@ const HomeBanner = () => {
     return (
         <section>
 
+
+            <div className="animation-area">
             <div className="banner-text">
                 <div id="logo-home">
                 <img 
@@ -10,8 +12,6 @@ const HomeBanner = () => {
                     alt="TRADER PRO" /></div>
                 <p>Llevando tu <strong><i>trading</i></strong> al siguiente nivel</p>
             </div>
-
-            <div className="animation-area">
                 <div className="box-area">
                     <li></li>
                     <li></li>

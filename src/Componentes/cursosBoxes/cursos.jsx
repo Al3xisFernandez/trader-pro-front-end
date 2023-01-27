@@ -1,7 +1,7 @@
 import React from "react";
  const CursosBoxes = () => {
    return (
-    <section>
+    <section className="cursos-section">
    
    <div className="container text-center">
   <div className="row">
