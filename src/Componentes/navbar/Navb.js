@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { App, MyModal } from "../modal/ContactenosModal";
+import {  MyModal } from "../modal/ContactenosModal";
 import { MyVerticallyCenteredModal, Appr } from "../modal/Modal";
 import Perfil from "../perfiles/Perfil";
 
@@ -29,7 +29,7 @@ function Navb() {
                 href="https://www.instagram.com"
                 target="_blank"
                 rel="noreferrer"
-              >
+                >
                 Instagram
               </NavDropdown.Item>
               <NavDropdown.Item>
