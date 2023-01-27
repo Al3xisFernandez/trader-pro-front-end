@@ -1,10 +1,14 @@
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { App, MyModal } from "../modal/ContactenosModal";
 import { MyVerticallyCenteredModal, Appr } from "../modal/Modal";
 import Perfil from "../perfiles/Perfil";
+
 function Navb() {
+  const [modalShow, setModalShow] = React.useState(false);
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
@@ -28,9 +32,16 @@ function Navb() {
               >
                 Instagram
               </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item className="bx bx-help-circle" href="">
-                Ayuda
+              <NavDropdown.Item>
+                <>
+                    <a href="#" onClick={() => setModalShow(true)}>
+                      Ayuda
+                    </a>
+                  <MyModal
+                    show={modalShow}
+                    onHide={() => setModalShow(false)}
+                  />
+                </>
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>

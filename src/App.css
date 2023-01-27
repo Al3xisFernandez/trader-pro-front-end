@@ -522,7 +522,6 @@ font-family: 'Racing Sans One', cursive; */
 }
 
 #btnregistro {
-  display: block;
   text-align: center;
 }
 
@@ -539,10 +538,12 @@ font-family: 'Racing Sans One', cursive; */
   color: rgb(247, 239, 239);
   background-color: rgb(83, 82, 82);
 }
-
+#btnregi a {
+margin-left:15px ; 
+}
 #btnreg {
   width: 5rem;
-  height: 3rem;
+  height: 1rem;
   color: rgb(167, 158, 158);
   background-color: transparent;
   border: none;
@@ -560,9 +561,6 @@ font-family: 'Racing Sans One', cursive; */
 #btnontent {
   width: 25rem;
 }
-
-
-
 
 nav ul {
   z-index: 2;
