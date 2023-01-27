@@ -1,9 +1,9 @@
 import { React, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import { Api } from "../../servicio/api";
+import { Api } from "../servicio/api";
 
-const Login = () => {
+const InicioSesion = () => {
   const [formValues, setFormValues] = useState({
     email: "",
     password: "",
@@ -36,7 +36,7 @@ const Login = () => {
           value={formValues.email}
           onChange={handleChange}
           required
-          />
+        />
         <Form.Text className="text-muted"></Form.Text>
       </Form.Group>
 
@@ -49,7 +49,7 @@ const Login = () => {
           value={formValues.password}
           onChange={handleChange}
           required
-          />
+        />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
       </Form.Group>
@@ -58,8 +58,8 @@ const Login = () => {
         Registrar
       </Button>
       </div>
-      </Form>
-  )
+    </Form>
+  );
 };
 
-export default Login;
+export default InicioSesion;

@@ -30,38 +30,43 @@
   width: 100%;
 }
 
-
 .perfil {
   height: 2rem;
   display: flex;
 }
+
 .perfil img {
   height: 2rem;
   border-radius: 1rem;
 }
+
 .perfil h6 {
   padding-right: 1rem;
   padding-left: 1rem;
   padding-top: 0.5rem;
   color: #fffefe;
 }
+
 .cerrarsesion {
   font-size: x-small;
   width: 5.5rem;
   height: 2rem;
   border-radius: 1rem;
 }
+
 .login {
   font-size: x-small;
   width: 5.5rem;
   height: 2rem;
   border-radius: 1rem;
 }
+
 .contenedor-QuienesSomos {
   text-align: center;
   justify-content: center;
   color: white;
 }
+
 .contenedor-QuienesSomos ul li {
   width: 80%;
   display: block;
@@ -71,6 +76,7 @@
   box-shadow: 0 2px 6px #fffafaa4;
   list-style: none;
 }
+
 .contenedor-QuienesSomos h1 {
   box-shadow: 0 2px 6px #ffffffa4;
   width: 20%;
@@ -79,6 +85,7 @@
   border-radius: 1rem;
   margin-top: 1rem;
 }
+
 .contenedor-QuienesSomos img {
   width: 400px;
   height: 400px;
@@ -87,6 +94,7 @@
   padding: 15px;
   margin: 30px;
 }
+
 .containfooter {
   background-color: black;
   width: 100%;
@@ -94,20 +102,23 @@
   justify-content: space-around;
   color: #fffefe;
 }
+
 footer {
   display: flex;
   flex-direction: column;
   min-height: 15vh;
   border: 1px solid #202020;
-  -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+  /* -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75); */
+  /* -moz-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75); */
   box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
 }
 
 footer p {
   vertical-align: bottom;
-  text-align: center;
+  text-align: end;
   margin-top: auto;
+  color: white;
+  font-size: x-small;
 }
 
 .containfooter ul {
@@ -115,13 +126,16 @@ footer p {
   display: block;
   margin: auto;
 }
+
 .containfooter box-icon {
   margin: 15px;
   fill: white;
 }
+
 .containfooter li {
   list-style: none;
 }
+
 .containfooter small {
   display: flex;
   flex-wrap: wrap;
@@ -130,7 +144,7 @@ footer p {
 }
 
 .footer-a a {
-  color: white;
+  color: rgb(167, 158, 158);
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -174,6 +188,10 @@ font-family: 'Racing Sans One', cursive; */
   );
   width: 100%;
   height: 90vh;
+}
+
+.animation-area > .row {
+  height: 100%;
 }
 
 .box-area {
@@ -323,8 +341,50 @@ font-family: 'Racing Sans One', cursive; */
   gap: 1rem;
 }
 
-.cursos-section{
+#navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.cursos-section {
   margin-top: 10vh;
+}
+
+.img-wrapper {
+  width: 40%;
+  height: 80%;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+.img-100 {
+  width: 100%;
+  height: 100%;
+}
+
+.row > .col-6 {
+  height: 10rem;
+}
+.row > .col-4 {
+  height: 10rem;
+}
+
+.qs-section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-left: 0!important;
+  max-width: 100%;
+  background-color: #a5c9ca;
+  margin-right: 0!important;
+}
+
+.qs-section p {
+  height: fit-content !important;
+  margin: auto;
 }
 
 @keyframes animate {
@@ -337,7 +397,6 @@ font-family: 'Racing Sans One', cursive; */
     opacity: 0;
   }
 }
-
 
 /* ---------------------------------BUBBLES----------------------------- */
 .bubbles {
@@ -357,7 +416,8 @@ font-family: 'Racing Sans One', cursive; */
   width: var(--bubble-radius);
   height: var(--bubble-radius);
   border-radius: 50%;
-  animation: float-up var(--bubble-float-duration) var(--bubble-float-delay) ease-in infinite;
+  animation: float-up var(--bubble-float-duration) var(--bubble-float-delay)
+    ease-in infinite;
 }
 .bubble::before {
   position: absolute;
@@ -368,7 +428,8 @@ font-family: 'Racing Sans One', cursive; */
   height: 100%;
   background: rgba(136, 246, 251, 0.3);
   border-radius: inherit;
-  animation: var(--bubble-sway-type) var(--bubble-sway-duration) var(--bubble-sway-delay) ease-in-out alternate infinite;
+  animation: var(--bubble-sway-type) var(--bubble-sway-duration)
+    var(--bubble-sway-delay) ease-in-out alternate infinite;
 }
 .bubble:nth-child(0) {
   --bubble-left-offset: 14vw;
@@ -852,40 +913,51 @@ font-family: 'Racing Sans One', cursive; */
   }
 }
 
+#navbar-logo {
+  background-color: #84a0a1b4;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  width: 10vw;
+}
 
-
-
-
-
-
-
-
+#navbar-logo img {
+  width: 100%;
+}
 
 /* ------------------- MEDIAS Q-------------------------------- */
 
 @media only screen and (max-width: 425px) {
-  @keyframes Carrusel {
-    from {
-      transform: rotateY(360deg) translateZ(120px);
-      z-index: 10;
-      opacity: 0.9;
-    }
-
-    50% {
-      z-index: -10;
-    }
-
-    to {
-      transform: rotateX(0deg) translateZ(120px);
-      z-index: 10;
-    }
+  #logo-home {
+    width: 95% !important;
   }
-  .cards-container {
-    width: 400px;
+  #logo-home img {
+    padding-top: 20% !important;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  #logo-home {
+    width: 80%;
+  }
+  #logo-home img {
+    padding-top: 10%;
   }
 
-  .cards {
-    left: 175px;
+  .banner-text p {
+    font-size: 2rem;
+  }
+
+  .qs-section {
+    flex-direction: column;
+  }
+
+  .col-6,
+  .col-4 {
+    width: 80% !important;
+  }
+
+  .col-5{
+    width: 50%!important;
   }
 }
 
@@ -899,8 +971,113 @@ font-family: 'Racing Sans One', cursive; */
   }
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 426px) {
-  .cards {
-    left: 235px;
-  }
+#btnregistro {
+  display: block;
+  text-align: center;
+}
+
+#btnregistro button {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 2rem;
+  color: white;
+  background-color: rgb(63, 58, 58);
+  border: none;
+}
+
+#btnregistro button:hover {
+  color: rgb(247, 239, 239);
+  background-color: rgb(83, 82, 82);
+}
+
+#btnreg {
+  width: 5rem;
+  height: 3rem;
+  color: rgb(167, 158, 158);
+  background-color: transparent;
+  border: none;
+}
+
+#btnreg:hover {
+  color: rgb(207, 203, 203);
+  background-color: none;
+}
+
+#modalbody {
+  width: 25rem;
+}
+
+#btnontent {
+  width: 25rem;
+}
+
+nav ul {
+  z-index: 2;
+  color: rgb(3, 3, 3);
+  list-style: none;
+  list-style: none;
+}
+
+nav li {
+  line-height: 25px;
+  position: relative;
+}
+
+nav li ul {
+  position: absolute;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: rgb(241, 223, 223);
+  left: 1rem;
+}
+
+nav a:hover {
+  color: rgb(221, 206, 206);
+}
+
+nav li:hover ul {
+  display: block;
+  color: rgb(221, 206, 206);
+}
+
+nav li ul {
+  display: none;
+}
+
+nav > ul {
+  color: rgb(0, 0, 0);
+  display: table;
+  padding-right: 3rem;
+}
+
+nav li li {
+  width: 160%;
+  background-color: rgb(61, 58, 58);
+}
+
+nav > ul > li > ul {
+  top: 100%;
+  right: 0px;
+}
+
+div .dropdown-menu {
+  background-color: rgb(61, 58, 58);
+}
+
+a.dropdown-item {
+  color: rgb(241, 223, 223);
+}
+
+a.dropdown-item:hover {
+  color: rgb(221, 206, 206);
+  background: rgb(59, 57, 57);
+}
+
+box-icon {
+  fill: white;
+  margin-top: 0.5rem !important;
+  border-radius: 9px;
 }

@@ -1,15 +1,20 @@
 import React from "react";
 import "boxicons";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer>
       <div className="containfooter">
-        <p>TraderPRo</p>
+        <h3>TraderPRo</h3>
         <div className="footer-a">
+            <Link to="/">Inicio</Link>
+            <Link to="/QuienesSomos">QuienesSomos</Link>
           <a href="tel:543814982513">Numero</a>
           <a href="mailto:alexxxfernandez50@gmail.com">
             Correo
-          </a></div>
+          </a>
+
+          </div>
         <div>
           <ul className="List">
             <li>
