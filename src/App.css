@@ -29,6 +29,7 @@
   height: 150px;
   margin: auto;
 }
+
 .container-container {
   display: flex;
   justify-content: center;
@@ -69,14 +70,17 @@
   background-image: url(images/trading.jpg);
   background-size: cover;
 }
+
 #baki:hover {
   box-shadow: 0px 0px 10px green;
 }
+
 #bake {
   background-image: url(images/cripto.jpg);
   background-size: cover;
   animation-delay: -1s;
 }
+
 #bake:hover {
   box-shadow: 0px 0px 10px green;
 }
@@ -86,49 +90,61 @@
   background-size: cover;
   animation-delay: -2s;
 }
+
 #baka:hover {
   box-shadow: 0px 0px 10px green;
 }
+
 #buk {
   background-image: url(images/operaciones.jpg);
   background-size: cover;
   animation-delay: -3s;
 }
+
 #buk:hover {
   box-shadow: 0px 0px 10px green;
 }
+
 #bok {
   background-image: url(images/acciones.jpg);
   background-size: cover;
   animation-delay: -4s;
 }
+
 #bok:hover {
   box-shadow: 0px 0px 10px green;
 }
+
 #bik {
   background-image: url(images/bonos.jpg);
   background-size: cover;
   animation-delay: -5s;
 }
+
 #bik:hover {
   box-shadow: 0px 0px 10px green;
 }
+
 #bek {
   background-image: url(images/indices.jpg);
   background-size: cover;
   animation-delay: -6s;
 }
+
 #bek:hover {
   box-shadow: 0px 0px 10px green;
 }
+
 #bak {
   background-image: url(images/futuros.jpg);
   background-size: cover;
   animation-delay: -7s;
 }
+
 #bak:hover {
   box-shadow: 0px 0px 10px green;
 }
+
 .cards h3 {
   color: white;
   font-size: 8px;
@@ -136,37 +152,44 @@
   margin-top: 70px;
   background-color: red;
 }
+
 .perfil {
   height: 2rem;
   display: flex;
 }
+
 .perfil img {
   height: 2rem;
   border-radius: 1rem;
 }
+
 .perfil h6 {
   padding-right: 1rem;
   padding-left: 1rem;
   padding-top: 0.5rem;
   color: #fffefe;
 }
+
 .cerrarsesion {
   font-size: x-small;
   width: 5.5rem;
   height: 2rem;
   border-radius: 1rem;
 }
+
 .login {
   font-size: x-small;
   width: 5.5rem;
   height: 2rem;
   border-radius: 1rem;
 }
+
 .contenedor-QuienesSomos {
   text-align: center;
   justify-content: center;
   color: white;
 }
+
 .contenedor-QuienesSomos ul li {
   width: 80%;
   display: block;
@@ -176,6 +199,7 @@
   box-shadow: 0 2px 6px #fffafaa4;
   list-style: none;
 }
+
 .contenedor-QuienesSomos h1 {
   box-shadow: 0 2px 6px #ffffffa4;
   width: 20%;
@@ -184,6 +208,7 @@
   border-radius: 1rem;
   margin-top: 1rem;
 }
+
 .contenedor-QuienesSomos img {
   width: 400px;
   height: 400px;
@@ -192,6 +217,7 @@
   padding: 15px;
   margin: 30px;
 }
+
 .containfooter {
   background-color: black;
   width: 100%;
@@ -199,20 +225,25 @@
   justify-content: space-around;
   color: #fffefe;
 }
+
 footer {
   display: flex;
   flex-direction: column;
   min-height: 15vh;
   border: 1px solid #202020;
-  -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+  /* -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75); */
+  /* -moz-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75); */
   box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
 }
 
 footer p {
   vertical-align: bottom;
-  text-align: center;
+  text-align: end;
   margin-top: auto;
+  color: white;
+  font-size: x-small;
+
+
 }
 
 .containfooter ul {
@@ -220,13 +251,16 @@ footer p {
   display: block;
   margin: auto;
 }
+
 .containfooter box-icon {
   margin: 15px;
   fill: white;
 }
+
 .containfooter li {
   list-style: none;
 }
+
 .containfooter small {
   display: flex;
   flex-wrap: wrap;
@@ -235,7 +269,7 @@ footer p {
 }
 
 .footer-a a {
-  color: white;
+  color: rgb(167, 158, 158);
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -460,6 +494,7 @@ font-family: 'Racing Sans One', cursive; */
       z-index: 10;
     }
   }
+
   .cards-container {
     width: 400px;
   }
@@ -479,8 +514,123 @@ font-family: 'Racing Sans One', cursive; */
   }
 }
 
+
 @media only screen and (max-width: 1024px) and (min-width: 426px) {
   .cards {
     left: 235px;
   }
+}
+
+#btnregistro {
+  display: block;
+  text-align: center;
+}
+
+#btnregistro button {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 2rem;
+  color: white;
+  background-color: rgb(63, 58, 58);
+  border: none;
+}
+
+#btnregistro button:hover {
+  color: rgb(247, 239, 239);
+  background-color: rgb(83, 82, 82);
+}
+
+#btnreg {
+  width: 5rem;
+  height: 3rem;
+  color: rgb(167, 158, 158);
+  background-color: transparent;
+  border: none;
+}
+
+#btnreg:hover {
+  color: rgb(207, 203, 203);
+  background-color: none;
+}
+
+#modalbody {
+  width: 25rem;
+}
+
+#btnontent {
+  width: 25rem;
+}
+
+
+
+
+nav ul {
+  z-index: 2;
+  color: rgb(3, 3, 3);
+  list-style: none;
+  list-style: none;
+}
+
+nav li {
+  line-height: 25px;
+  position: relative;
+}
+
+nav li ul {
+  position: absolute;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: rgb(241, 223, 223);
+  left: 1rem;
+}
+
+nav a:hover {
+  color: rgb(221, 206, 206);
+}
+
+nav li:hover ul {
+  display: block;
+  color: rgb(221, 206, 206);
+}
+
+nav li ul {
+  display: none;
+}
+
+nav>ul {
+  color: rgb(0, 0, 0);
+  display: table;
+  padding-right: 3rem;
+}
+
+nav li li {
+  width: 160%;
+  background-color: rgb(61, 58, 58);
+}
+
+nav>ul>li>ul {
+  top: 100%;
+  right: 0px;
+}
+
+div .dropdown-menu {
+  background-color: rgb(61, 58, 58);
+}
+
+a.dropdown-item {
+  color: rgb(241, 223, 223);
+}
+
+a.dropdown-item:hover {
+  color: rgb(221, 206, 206);
+  background: rgb(59, 57, 57);
+}
+
+box-icon {
+  fill: white;
+  margin-top: .5rem !important;
+  border-radius: 9px;
 }

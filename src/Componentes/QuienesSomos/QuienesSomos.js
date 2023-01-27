@@ -56,6 +56,3 @@ const QuienesSomos= (props)=> {
 }
 
 export default QuienesSomos;
-
-
-
