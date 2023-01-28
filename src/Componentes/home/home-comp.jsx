@@ -2,8 +2,6 @@ import React from "react";
 const HomeBanner = () => {
     return (
         <section>
-
-
             <div className="animation-area">
             <div className="banner-text">
                 <div id="logo-home">

@@ -4,6 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { MyVerticallyCenteredModal, Appr } from "../modal/Modal";
 import Perfil from "../perfiles/Perfil";
+import RightModal from "../modal/modal-login";
 function Navb() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
