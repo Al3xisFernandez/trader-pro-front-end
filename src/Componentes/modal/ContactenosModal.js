@@ -1,9 +1,9 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import LoginComponent from '../login/LoginComponent';
+import Contactenos from '../Contactenos/Contactenos';
 
-export function MyVerticallyCenteredModal(props) {
+export function MyModal(props) {
   return (
     <Modal 
       {...props}
@@ -13,23 +13,23 @@ export function MyVerticallyCenteredModal(props) {
       centered
     >
       <Modal.Header closeButton>
-        <LoginComponent />
       </Modal.Header>
       <Modal.Body id='modalbody'>
+     <Contactenos />
       </Modal.Body>
      
     </Modal>
   );
 }
-export function Appr() {
+export function App() {
   const [modalShow, setModalShow] = React.useState(false);
 
   return (
-    <>
-       <Button id="btnreg" variant="primary" onClick={() => setModalShow(true)}>
-        Registrarse
-      </Button>
-      <MyVerticallyCenteredModal
+    <><div id="btnregi" >
+       <a  href="#" onClick={() => setModalShow(true)}>Ayuda
+      </a>
+      </div>
+      <MyModal
         show={modalShow}
         onHide={() => setModalShow(false)}
       />
