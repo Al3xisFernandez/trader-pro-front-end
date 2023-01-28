@@ -1,9 +1,10 @@
 import React from "react";
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route} from 'react-router-dom';
 import Inicio from "./inicio/Inicio";
 import LoginComponent from "./login/LoginComponent";
 import UserDetails from "./login/UserDetails";
 import QuienesSomos from "./QuienesSomos/QuienesSomos";
+import SignUp from "./login/SignUp";
 
 const Pages = () => {
     const isLoggedIn = window.localStorage.getItem("loggedIn");
@@ -11,9 +12,10 @@ const Pages = () => {
     return (
         <section>
             <Switch>
-                <Route exact path="/" element={isLoggedIn==="true" ? <UserDetails/> : <LoginComponent/>} />
                 <Route path="/"  exact component={Inicio}/>
-                {/* <Route path="sigin"  exact component={Inicio}/> */}
+                <Route path="/" exact component={isLoggedIn=== true ? <UserDetails/> : <LoginComponent/>} />
+                <Route path="/SignUp"  exact component={SignUp}/>
+                <Route path="/UserDetails"  exact component={UserDetails}/>
                 <Route path="/QuienesSomos" exact component={QuienesSomos} />
             </Switch>
         </section>

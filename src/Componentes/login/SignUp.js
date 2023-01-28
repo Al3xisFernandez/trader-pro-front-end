@@ -1,20 +1,13 @@
-import React, {Component} from 'react'
+import React, { useState } from "react";
 
-export default class SignUp extends Component {
-  constructor(props) {  
-    super(props)
-    this.state = {
-      fname: '',
-      lname: '',
-      email: '',
-      password: ''
-    }; 
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
+export default function SignUp() {
+  const [fname, setFname] = useState("");
+  const [lname, setLname] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-    handleSubmit(e) {
-        e.preventDefault();
-        const {fname,lname,email,password} = this.state;
+   const handleSubmit= (e)=> {
+        // e.preventDefault();
         console.log(fname,lname,email,password);
         fetch("http://localhost:5000/register",{
             method: "POST",
@@ -29,26 +22,27 @@ export default class SignUp extends Component {
         console.log(data, "userRegister");
     });
 }
-render () {
-    return (
-    <form onSubmit={this.handleSubmit}>
+return (
+    <form onSubmit={handleSubmit}>
       <h3>Sign Up</h3>
+   
       <div className="mb-3">
-        <label>Fist Name</label>
+        <label>First name</label>
         <input
           type="text"
           className="form-control"
-          placeholder="First Name"
-          onChange={(e) => this.setState({fname: e.target.value})}
+          placeholder="First name"
+          onChange={(e) => setFname(e.target.value)}
         />
       </div>
+
       <div className="mb-3">
-        <label>First Name</label>
+        <label>Last name</label>
         <input
           type="text"
           className="form-control"
-          placeholder="Larst Name"
-          onChange={(e) => this.setState({lname: e.target.value})}
+          placeholder="Last name"
+          onChange={(e) => setLname(e.target.value)}
         />
       </div>
 
@@ -58,7 +52,7 @@ render () {
           type="email"
           className="form-control"
           placeholder="Enter email"
-          onChange={(e) => this.setState({email: e.target.value})}
+          onChange={(e) => setEmail(e.target.value)}
         />
       </div>
 
@@ -68,16 +62,18 @@ render () {
           type="password"
           className="form-control"
           placeholder="Enter password"
-          onChange={(e) => this.setState({password: e.target.value})}
+          onChange={(e) => setPassword(e.target.value)}
         />
       </div>
-      
+
       <div className="d-grid">
         <button type="submit" className="btn btn-primary">
-          Submit
+          Sign Up
         </button>
       </div>
+      <p className="forgot-password text-right">
+        Already registered <a href="/SignIn">sign in?</a>
+      </p>
     </form>
-    
   );
-    }}
+}
