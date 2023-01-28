@@ -7,6 +7,8 @@ import {  MyModal } from "../modal/ContactenosModal";
 import { MyVerticallyCenteredModal, Appr } from "../modal/Modal";
 import Perfil from "../perfiles/Perfil";
 
+import RightModal from "../modal/modal-login";
+
 function Navb() {
   const [modalShow, setModalShow] = React.useState(false);
   return (
