@@ -7,13 +7,10 @@ import QuienesSomos from "./QuienesSomos/QuienesSomos";
 import SignUp from "./login/SignUp";
 
 const Pages = () => {
-    const isLoggedIn = window.localStorage.getItem("loggedIn");
-
     return (
         <section>
             <Switch>
                 <Route path="/"  exact component={Inicio}/>
-                <Route exact path="/"  element={isLoggedIn === "true" ? <UserDetails /> : <LoginComponent />} />
                 <Route path="/SignUp"  exact component={SignUp}/>
                 <Route path="/LoginComponent"  exact component={LoginComponent}/>
                 <Route path="/"  exact component={UserDetails}/>
