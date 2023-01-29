@@ -13,9 +13,10 @@ const Pages = () => {
         <section>
             <Switch>
                 <Route path="/"  exact component={Inicio}/>
-                <Route path="/" exact component={isLoggedIn=== true ? <UserDetails/> : <LoginComponent/>} />
+                <Route exact path="/"  element={isLoggedIn === "true" ? <UserDetails /> : <LoginComponent />} />
                 <Route path="/SignUp"  exact component={SignUp}/>
-                <Route path="/UserDetails"  exact component={UserDetails}/>
+                <Route path="/LoginComponent"  exact component={LoginComponent}/>
+                <Route path="/"  exact component={UserDetails}/>
                 <Route path="/QuienesSomos" exact component={QuienesSomos} />
             </Switch>
         </section>

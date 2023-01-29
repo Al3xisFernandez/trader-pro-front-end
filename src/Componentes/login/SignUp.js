@@ -7,7 +7,7 @@ export default function SignUp() {
   const [password, setPassword] = useState("");
 
    const handleSubmit= (e)=> {
-        // e.preventDefault();
+        e.preventDefault();
         console.log(fname,lname,email,password);
         fetch("http://localhost:5000/register",{
             method: "POST",
@@ -72,7 +72,7 @@ return (
         </button>
       </div>
       <p className="forgot-password text-right">
-        Already registered <a href="/SignIn">sign in?</a>
+        Already registered <a href="/LoginComponent">sign in?</a>
       </p>
     </form>
   );

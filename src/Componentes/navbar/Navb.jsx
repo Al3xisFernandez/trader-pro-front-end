@@ -3,11 +3,14 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import UserDetails from "../login/UserDetails";
 import {  MyModal } from "../modal/ContactenosModal";
 import { MyVerticallyCenteredModal, Appr } from "../modal/Modal";
 import Perfil from "../perfiles/Perfil";
 
 function Navb() {
+  const isLoggedIn = window.localStorage.getItem("loggedIn");
+
   const [modalShow, setModalShow] = React.useState(false);
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -35,22 +38,26 @@ function Navb() {
                 Instagram
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <>
-                    <a href="#" onClick={() => setModalShow(true)}>
+                    <nav  onClick={() => setModalShow(true)}>
                       Ayuda
-                    </a>
+                    </nav>
                   <MyModal
                     show={modalShow}
                     onHide={() => setModalShow(false)}
                   />
-                </>
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <Nav>
-            <Appr /> <MyVerticallyCenteredModal />
+          
+          {isLoggedIn ? (
+          <>
             <Perfil />
-          </Nav>
+            <UserDetails  />
+          </>
+        ) : (
+          <Appr />
+        )}
+        <MyVerticallyCenteredModal />
         </Navbar.Collapse>
       </Container>
     </Navbar>

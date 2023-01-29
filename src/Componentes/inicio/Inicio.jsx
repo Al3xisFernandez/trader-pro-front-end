@@ -6,6 +6,7 @@ const Inicio = () => {
     <main>
      <HomeBanner />
      <CursosBoxes />
+     <HomeBanner />
     </main>
   );
 };

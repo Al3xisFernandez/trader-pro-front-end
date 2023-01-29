@@ -1,4 +1,5 @@
 import React, { Component, useState } from "react"; // eslint-disable-line
+
 export default function LoginComponent() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -25,7 +26,7 @@ export default function LoginComponent() {
           window.localStorage.setItem("token", data.data);
           window.localStorage.setItem("loggedIn", true);
 
-          window.location.href = "./UserDetails";
+          window.location.href = "/";
         }
       });
   }
