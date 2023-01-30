@@ -39,14 +39,12 @@ function Navb() {
                 >
                 Instagram
               </NavDropdown.Item>
-              <NavDropdown.Item>
-                    <nav  onClick={() => setModalShow(true)}>
-                      Ayuda
-                    </nav>
-                  <MyModal
-                    show={modalShow}
-                    onHide={() => setModalShow(false)}
-                  />
+              <NavDropdown.Item
+                href="/Contactenos"
+                target="_blank"
+                rel="noreferrer"
+                >
+                Envíanos un mensaje
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
