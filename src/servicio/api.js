@@ -1,5 +1,7 @@
 import axios from "axios";
-export const Api = async (usuario) => {
-    const response =  await axios.post("http://localhost:8000/usuarios", usuario);
-    return response.data;
-}
+
+export const Register = async (user) => {
+ 
+  const response = await axios.post("http://localhost:5000/register", user);
+  return response.data;
+};
