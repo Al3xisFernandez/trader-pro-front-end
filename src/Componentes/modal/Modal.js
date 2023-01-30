@@ -1,7 +1,6 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import Login from '../login/Login';
 
 export function MyVerticallyCenteredModal(props) {
   return (
@@ -13,9 +12,9 @@ export function MyVerticallyCenteredModal(props) {
       centered
     >
       <Modal.Header closeButton>
+        
       </Modal.Header>
       <Modal.Body id='modalbody'>
-     <Login />
       </Modal.Body>
      
     </Modal>
