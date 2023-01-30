@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Register } from "../../servicio/api";
 export default function SignUp() {
   const [fname, setFname] = useState("");
   const [lname, setLname] = useState("");
@@ -8,21 +7,20 @@ export default function SignUp() {
 
    const handleSubmit= (e)=> {
         e.preventDefault();
-       console.log(fname,lname,email,password);
-     const userCreate = () =>{
-      Register(e)
-      .then((res)=> res.json())
-      .then((data)=> {
+        console.log(fname,lname,email,password);
+        fetch("http://localhost:5000/register",{
+            method: "POST",
+            crossDomain: true,
+            headers: {"Content-Type": "application/json", "accept": "application/json",
+            "access-Control-Allow-Origin": "*",
+            },
+            body: JSON.stringify({fname,lname,email,password 
+        }),
+    }).then((res)=> res.json())
+    .then((data)=> {
         console.log(data, "userRegister");
-        if (data.status === "ok") {
-          alert("Registration Successful");
-         } else {
-           alert("Something went wrong");
-         }
-       }).catch ((error) =>alert("error al registrar"));
-     }
-     userCreate();
-    }
+    });
+}
 return (
     <form onSubmit={handleSubmit}>
       <h3>Sign Up</h3>
@@ -36,7 +34,6 @@ return (
           onChange={(e) => setFname(e.target.value)}
         />
       </div>
-
       <div className="mb-3">
         <label>Last name</label>
         <input
@@ -46,7 +43,6 @@ return (
           onChange={(e) => setLname(e.target.value)}
         />
       </div>
-
       <div className="mb-3">
         <label>Email address</label>
         <input
@@ -56,7 +52,6 @@ return (
           onChange={(e) => setEmail(e.target.value)}
         />
       </div>
-
       <div className="mb-3">
         <label>Password</label>
         <input
@@ -67,7 +62,6 @@ return (
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
-
       <div className="d-grid">
         <button type="submit" className="btn btn-primary">
           Sign Up

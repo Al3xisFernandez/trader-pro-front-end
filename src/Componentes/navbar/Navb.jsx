@@ -4,22 +4,19 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import UserDetails from "../login/UserDetails";
-import {  MyModal } from "../modal/ContactenosModal";
-import { MyVerticallyCenteredModal, Appr } from "../modal/Modal";
-import Perfil from "../perfiles/Perfil";
-
 import RightModal from "../modal/modal-login";
+import Perfil from "../perfiles/Perfil";
 
 function Navb() {
   const isLoggedIn = window.localStorage.getItem("loggedIn");
 
-  const [modalShow, setModalShow] = React.useState(false);
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container id="navbar-container">
-        <Navbar.Brand id="navbar-logo" href="/"> <img 
-                    src={require('../../images/logo.png')}
-                    alt="TRADER PRO" /></Navbar.Brand>
+        <Navbar.Brand id="navbar-logo" href="/">
+          {" "}
+          <img src={require("../../images/logo.png")} alt="TRADER PRO" />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
@@ -36,30 +33,25 @@ function Navb() {
                 href="https://www.instagram.com"
                 target="_blank"
                 rel="noreferrer"
-                >
+              >
                 Instagram
               </NavDropdown.Item>
               <NavDropdown.Item>
-                    <nav  onClick={() => setModalShow(true)}>
-                      Ayuda
-                    </nav>
-                  <MyModal
-                    show={modalShow}
-                    onHide={() => setModalShow(false)}
-                  />
+                <Nav.Link href="/Contactenos" target="_blank" rel="noreferrer">
+                Contactenos
+                </Nav.Link>
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          
+
           {isLoggedIn ? (
-          <>
-            <Perfil />
-            <UserDetails  />
-          </>
-        ) : (
-          <Appr />
-        )}
-        <MyVerticallyCenteredModal />
+            <>
+              <Perfil />
+              <UserDetails />
+            </>
+          ) : (
+            <RightModal />
+          )}
         </Navbar.Collapse>
       </Container>
     </Navbar>
