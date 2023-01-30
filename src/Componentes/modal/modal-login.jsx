@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Login from '../login/Login';
 
 function RightModal() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +15,6 @@ function RightModal() {
         <div className="modal-right">
           <div className="modal-content">
             <h2>Modal Title</h2>
-            <Login />
             <button onClick={toggle}>Close</button>
           </div>
         </div>

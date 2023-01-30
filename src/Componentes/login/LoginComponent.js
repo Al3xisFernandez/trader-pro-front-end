@@ -1,34 +1,36 @@
-import React, { Component, useState } from "react"; // eslint-disable-line
+import React, {  useState } from "react";
+
 export default function LoginComponent() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
  function  handleSubmit(e) {
     e.preventDefault();
-    console.log(email, password);
-  
-    fetch("http://localhost:5000/loginuser", {
-      method: "POST",
-      crossDomain: true,
-      headers: {
-        "Content-Type": "application/json",
-        accept: "application/json",
-        "access-Control-Allow-Origin": "*",
-      },
-      body: JSON.stringify({ email, password }),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data, "userRegister");
-        if (data.status === "ok") {
-          alert("login successful");
-          window.localStorage.setItem("token", data.data);
-          window.localStorage.setItem("loggedIn", true);
 
-          window.location.href = "./UserDetails";
-        }
-      });
-  }
+    console.log(email, password);
+  //   fetch("http://localhost:5000/loginuser", {
+  //     method: "POST",
+  //     crossDomain: true,
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //       accept: "application/json",
+  //       "access-Control-Allow-Origin": "*",
+  //     },
+  //     body: JSON.stringify({ email, password }),
+  //   })
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       console.log(data, "userRegister");
+  //       if (data.status === "ok") {
+  //         alert("login successful");
+  //         window.localStorage.setItem("token", data.data);
+  //         window.localStorage.setItem("loggedIn", true);
+
+  //         window.location.href = "/";
+  //       }
+  //     });
+  // }
+ }
   return (
     <form onSubmit={handleSubmit}>
       <h3>Sign In</h3>
@@ -49,6 +51,7 @@ export default function LoginComponent() {
           type="password"
           className="form-control"
           placeholder="Enter password"
+          autoComplete="on"
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
@@ -76,4 +79,4 @@ export default function LoginComponent() {
       </p>
     </form>
   );
-}
+  }
