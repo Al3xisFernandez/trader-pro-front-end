@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import UserDetails from "../login/UserDetails";
-import { MyVerticallyCenteredModal, Appr } from "../modal/Modal";
+import RightModal from "../modal/modal-login";
 import Perfil from "../perfiles/Perfil";
 
 function Navb() {
@@ -50,9 +50,8 @@ function Navb() {
               <UserDetails />
             </>
           ) : (
-            <Appr />
+            <RightModal />
           )}
-          <MyVerticallyCenteredModal />
         </Navbar.Collapse>
       </Container>
     </Navbar>
