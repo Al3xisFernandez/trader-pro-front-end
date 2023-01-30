@@ -1,32 +1,45 @@
 import React, { useState } from "react";
+
 import { Register } from "../../servicio/api";
+
 export default function SignUp() {
   const [fname, setFname] = useState("");
   const [lname, setLname] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-   const handleSubmit= (e)=> {
-        e.preventDefault();
-       console.log(fname,lname,email,password);
-     const userCreate = () =>{
-      Register(e)
-      .then((res)=> res.json())
-      .then((data)=> {
-        console.log(data, "userRegister");
-        if (data.status === "ok") {
-          alert("Registration Successful");
-         } else {
-           alert("Something went wrong");
-         }
-       }).catch ((error) =>alert("error al registrar"));
-     }
-     userCreate();
-    }
-return (
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const signUpModel = {
+      fname: fname,
+      lname: lname,
+      email: email,
+      password: password,
+    };
+    Register(signUpModel).then((response) => {
+      if (response.status === 200)
+      console.log(response);})
+    console.log(signUpModel);
+    // const userCreate = () => {
+    //     .then((res) => res.json())
+    //     .then((data) => {
+    //       console.log(data.status);
+    //       console.log(data, "userRegister");
+    //       if (data.status === "ok") {
+    //         alert("Registration Successful");
+    //       } else {
+    //         alert("Something went wrong");
+    //       }
+    //     })
+    //     .catch((error) => alert("error al registrar"));
+    // };
+    // userCreate();
+  }
+
+  return (
     <form onSubmit={handleSubmit}>
       <h3>Sign Up</h3>
-   
+
       <div className="mb-3">
         <label>First name</label>
         <input

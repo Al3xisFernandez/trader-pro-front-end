@@ -1,36 +1,32 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
+import { loginuser } from "../../servicio/api";
 
 export default function LoginComponent() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
- function  handleSubmit(e) {
+  function handleSubmit(e) {
     e.preventDefault();
 
     console.log(email, password);
-  //   fetch("http://localhost:5000/loginuser", {
-  //     method: "POST",
-  //     crossDomain: true,
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //       accept: "application/json",
-  //       "access-Control-Allow-Origin": "*",
-  //     },
-  //     body: JSON.stringify({ email, password }),
-  //   })
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       console.log(data, "userRegister");
-  //       if (data.status === "ok") {
-  //         alert("login successful");
-  //         window.localStorage.setItem("token", data.data);
-  //         window.localStorage.setItem("loggedIn", true);
+    const LoginCreate = () => {
+      loginuser(e)
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data, "userRegister");
+          console.log(data.status)
+          if (data.status === "ok") {
+            alert("login successful");
+            window.localStorage.setItem("token", data.data);
+            window.localStorage.setItem("loggedIn", true);
 
-  //         window.location.href = "/";
-  //       }
-  //     });
-  // }
- }
+            window.location.href = "/";
+          }
+        });
+    };
+    LoginCreate();
+  }
+
   return (
     <form onSubmit={handleSubmit}>
       <h3>Sign In</h3>
@@ -79,4 +75,4 @@ export default function LoginComponent() {
       </p>
     </form>
   );
-  }
+}
