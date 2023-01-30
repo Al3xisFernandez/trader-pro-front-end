@@ -8,17 +8,17 @@ import SignUp from "./login/SignUp";
 import Contactenos from "./Contactenos/Contactenos";
 
 const Pages = () => {
-  return (
-    <section>
-      <Switch>
-        <Route path="/" exact component={Inicio} />
-        <Route path="/SignUp" exact component={SignUp} />
-        <Route path="/LoginComponent" exact component={LoginComponent} />
-        <Route path="/" exact component={UserDetails} />
-        <Route path="/QuienesSomos" exact component={QuienesSomos} />
-        <Route path="/Contactenos" exact component={Contactenos} />
-      </Switch>
-    </section>
-  );
-};
+    return (
+        <section>
+            <Switch>
+                <Route path="/"  exact component={Inicio}/>
+                <Route path="/SignUp"  exact component={SignUp}/>
+                <Route path="/LoginComponent"  exact component={LoginComponent}/>
+                <Route path="/"  exact component={UserDetails}/>
+                <Route path="/QuienesSomos" exact component={QuienesSomos} />
+                <Route path="/Contactenos" exact component={Contactenos} />
+            </Switch>
+        </section>
+    )
+}
 export default Pages;
