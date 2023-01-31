@@ -36,10 +36,9 @@ export default class UserDetails extends Component {
   };
   render() {
     return (
-      <div>
-       name  <h1> {this.state.userData.fname}</h1>
-        <br />
-        <button onClick={this.logOut}>Log Out</button>
+      <div className="UserDetail">
+        {this.state.userData.fname}
+        <button onClick={this.logOut}>Cerrar sesion</button>
       </div>
     );
   }
