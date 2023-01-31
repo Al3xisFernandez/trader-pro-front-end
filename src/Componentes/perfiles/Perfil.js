@@ -1,3 +1,5 @@
+import UserDetails from "../login/UserDetails";
+
 function Perfil() {
   return (
     <div className="navProfile"> 
@@ -5,10 +7,10 @@ function Perfil() {
       <ul>
         <li>
           <box-icon name="user-circle">
-            <p>Perfil</p>
           </box-icon>
           <ul>
             <li>
+          <UserDetails />
               <a href="#">Centro de tareas</a>
             </li>
             <li>

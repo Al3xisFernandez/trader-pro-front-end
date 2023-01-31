@@ -30,23 +30,23 @@ export default function LoginComponent() {
       });
   }
   return (
-    <form onSubmit={handleSubmit}>
-      <h3>Sign In</h3>
+    <form className="formLogin" onSubmit={handleSubmit}>
+      <h3>Ingresar</h3>
       <div className="mb-3">
-        <label>Email address</label>
+        <label>Email</label>
         <input
           type="email"
           className="form-control"
-          placeholder="Enter email"
+          placeholder="Ingrese email"
           onChange={(e) => setEmail(e.target.value)}
         />
       </div>
       <div className="mb-3">
-        <label>Password</label>
+        <label>Contraseña</label>
         <input
           type="password"
           className="form-control"
-          placeholder="Enter password"
+          placeholder="Ingrese su contraseña"
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
@@ -58,17 +58,17 @@ export default function LoginComponent() {
             id="customCheck1"
           />
           <label className="custom-control-label" htmlFor="customCheck1">
-            Remember me
+            Recordarme
           </label>
         </div>
       </div>
       <div className="d-grid">
         <button type="submit" className="btn btn-primary">
-          Submit
+          Enviar
         </button>
       </div>
       <p className="forgot-password text-right">
-        <a href="/SignUp">Sign Up</a>
+        <a href="/SignUp">Registrarse</a>
       </p>
     </form>
   );

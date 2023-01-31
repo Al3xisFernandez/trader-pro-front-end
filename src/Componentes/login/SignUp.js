@@ -22,7 +22,7 @@ export default function SignUp() {
     });
 }
 return (
-    <form onSubmit={handleSubmit}>
+    <form className="w-50 mx-auto bg-light" onSubmit={handleSubmit}>
       <h3>Sign Up</h3>
    
       <div className="mb-3">
