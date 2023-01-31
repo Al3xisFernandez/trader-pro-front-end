@@ -49,7 +49,7 @@ function Navb() {
           {isLoggedIn ? (
             <>
               <Perfil />
-              <UserDetails />
+              {/* <UserDetails /> */}
             </>
           ) : (
             <RightModal />
