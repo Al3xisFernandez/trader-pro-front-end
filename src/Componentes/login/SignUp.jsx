@@ -22,54 +22,55 @@ export default function SignUp() {
     });
 }
 return (
-    <form className="w-50 mx-auto bg-light" onSubmit={handleSubmit}>
-      <h3>Sign Up</h3>
-   
+ <div className="form-wrapper d-flex justify-content-center align-items-center">
+    <form className="w-50 mx-auto form-signup"onSubmit={handleSubmit}>
+      <h3>Registrarse</h3>
       <div className="mb-3">
-        <label>First name</label>
+        <label>Nombre</label>
         <input
           type="text"
           className="form-control"
-          placeholder="First name"
+          placeholder="Juan"
           onChange={(e) => setFname(e.target.value)}
         />
       </div>
       <div className="mb-3">
-        <label>Last name</label>
+        <label>Apellido</label>
         <input
           type="text"
           className="form-control"
-          placeholder="Last name"
+          placeholder="Perez"
           onChange={(e) => setLname(e.target.value)}
         />
       </div>
       <div className="mb-3">
-        <label>Email address</label>
+        <label>Email</label>
         <input
           type="email"
           className="form-control"
-          placeholder="Enter email"
+          placeholder="juan@perez.com"
           onChange={(e) => setEmail(e.target.value)}
         />
       </div>
       <div className="mb-3">
-        <label>Password</label>
+        <label>Contraseña</label>
         <input
           type="password"
           className="form-control"
-          placeholder="Enter password"
+          placeholder="***********"
           autoComplete="on"
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
       <div className="d-grid">
         <button type="submit" className="btn btn-primary">
-          Sign Up
+          Registrarse
         </button>
       </div>
       <p className="forgot-password text-right">
         Already registered <a href="/LoginComponent">sign in?</a>
       </p>
     </form>
+    </div>
   );
 }

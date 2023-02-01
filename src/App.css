@@ -398,6 +398,39 @@ font-family: 'Racing Sans One', cursive; */
   }
 }
 
+.form-wrapper{
+  min-height: 75vh;
+  background-color: #395B64;
+}
+.form-wrapper > .form-signup{
+  padding: 1rem;
+  background-color: #E7F6F2;
+  border-radius: 1rem;
+}
+
+.div-contacto{
+  min-height: 75vh;
+  width: 100%;
+background-color: #E7F6F2;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.contacto-datos-wrapper{
+  width: 45%;
+}
+.contacto-datos-wrapper > iframe{
+  width: 100%;
+}
+
+.form-div{
+  width: 45%;
+}
+
+.contacto-form{
+  width: 100%;
+}
+
 /* ---------------------------------BUBBLES----------------------------- */
 .bubbles {
   position: absolute;
