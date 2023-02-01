@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import LoginComponent from '../login/LoginComponent';
-function RightModal() {
 
+function RightModal() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -15,9 +15,10 @@ function RightModal() {
       {isOpen && (
         <div className="modal-right">
           <div className="modal-content">
-           <button onClick={toggle}>X</button>
-        <LoginComponent />
-           
+            <h2>Modal Title</h2>
+            <LoginComponent />
+            <button onClick={toggle}>Close</button>
+
           </div>
         </div>
       )}
