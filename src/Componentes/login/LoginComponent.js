@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react"; // eslint-disable-line
+import React, { useState } from "react"; 
 
 export default function LoginComponent() {
   const [email, setEmail] = useState("");
@@ -7,7 +7,7 @@ export default function LoginComponent() {
     e.preventDefault();
     console.log(email, password);
   
-    fetch("http://localhost:8000/loginuser", {
+    fetch("http://localhost:5000/loginuser", {
       method: "POST",
       crossDomain: true,
       headers: {
@@ -21,7 +21,7 @@ export default function LoginComponent() {
       .then((data) => {
         console.log(data, "userRegister");
         if (data.status === "ok") {
-          alert("login successful");
+          alert("Ingreso correctamente, ir al inicio?");
           window.localStorage.setItem("token", data.data);
           window.localStorage.setItem("loggedIn", true);
 

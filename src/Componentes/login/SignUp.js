@@ -8,7 +8,7 @@ export default function SignUp() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(fname, lname, email, password);
-    fetch("http://localhost:8000/register", {
+    fetch("http://localhost:5000/register", {
       method: "POST",
       crossDomain: true,
       headers: {
@@ -20,6 +20,13 @@ export default function SignUp() {
     }).then((res) => res.json())
       .then((data) => {
         console.log(data, "userRegister");
+        if (data.status === "ok") {
+          alert("Usario creado correctamente");
+          window.localStorage.setItem("token", data.data);
+          window.localStorage.setItem("loggedIn", true);
+
+          window.location.href = "/LoginComponent";
+        }
       });
   };
   return (
@@ -27,38 +34,38 @@ export default function SignUp() {
       <h3>Sign Up</h3>
 
       <div className="mb-3">
-        <label>First name</label>
+        <label>Nombre</label>
         <input
           type="text"
           className="form-control"
-          placeholder="First name"
+          placeholder="Nombre"
           onChange={(e) => setFname(e.target.value)}
         />
       </div>
       <div className="mb-3">
-        <label>Last name</label>
+        <label>Apellido</label>
         <input
           type="text"
           className="form-control"
-          placeholder="Last name"
+          placeholder="Apellido"
           onChange={(e) => setLname(e.target.value)}
         />
       </div>
       <div className="mb-3">
-        <label>Email address</label>
+        <label>Email</label>
         <input
           type="email"
           className="form-control"
-          placeholder="Enter email"
+          placeholder="Ingrese email"
           onChange={(e) => setEmail(e.target.value)}
         />
       </div>
       <div className="mb-3">
-        <label>Password</label>
+        <label>Contraseña</label>
         <input
           type="password"
           className="form-control"
-          placeholder="Enter password"
+          placeholder="Ingrese su contraseña"
           autoComplete="on"
           onChange={(e) => setPassword(e.target.value)}
         />
@@ -69,7 +76,7 @@ export default function SignUp() {
         </button>
       </div>
       <p className="forgot-password text-right">
-        Already registered <a href="/LoginComponent">sign in?</a>
+       Ya esta registrado? <a href="/LoginComponent">Ingresar</a>
       </p>
     </form>
   );
