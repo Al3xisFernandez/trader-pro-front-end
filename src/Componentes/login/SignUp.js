@@ -5,26 +5,27 @@ export default function SignUp() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-   const handleSubmit= (e)=> {
-        e.preventDefault();
-        console.log(fname,lname,email,password);
-        fetch("http://localhost:5000/register",{
-            method: "POST",
-            crossDomain: true,
-            headers: {"Content-Type": "application/json", "accept": "application/json",
-            "access-Control-Allow-Origin": "*",
-            },
-            body: JSON.stringify({fname,lname,email,password 
-        }),
-    }).then((res)=> res.json())
-    .then((data)=> {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(fname, lname, email, password);
+    fetch("http://localhost:8000/register", {
+      method: "POST",
+      crossDomain: true,
+      headers: {
+        "Content-Type": "application/json",
+        accept: "application/json",
+        "access-Control-Allow-Origin": "*",
+      },
+      body: JSON.stringify({ fname, lname, email, password }),
+    }).then((res) => res.json())
+      .then((data) => {
         console.log(data, "userRegister");
-    });
-}
-return (
+      });
+  };
+  return (
     <form className="w-50 mx-auto bg-light" onSubmit={handleSubmit}>
       <h3>Sign Up</h3>
-   
+
       <div className="mb-3">
         <label>First name</label>
         <input

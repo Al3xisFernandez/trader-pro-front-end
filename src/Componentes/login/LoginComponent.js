@@ -7,7 +7,7 @@ export default function LoginComponent() {
     e.preventDefault();
     console.log(email, password);
   
-    fetch("http://localhost:5000/loginuser", {
+    fetch("http://localhost:8000/loginuser", {
       method: "POST",
       crossDomain: true,
       headers: {
@@ -47,6 +47,7 @@ export default function LoginComponent() {
           type="password"
           className="form-control"
           placeholder="Ingrese su contraseña"
+          autoComplete="on"
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
