@@ -1,22 +1,18 @@
-import React from 'react';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
+import React from "react";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
 
 export function MyVerticallyCenteredModal(props) {
   return (
-    <Modal 
+    <Modal
       {...props}
       id="btnontent"
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton>
-        
-      </Modal.Header>
-      <Modal.Body id='modalbody'>
-      </Modal.Body>
-     
+      <Modal.Header closeButton></Modal.Header>
+      <Modal.Body id="modalbody"></Modal.Body>
     </Modal>
   );
 }
@@ -25,7 +21,7 @@ export function Appr() {
 
   return (
     <>
-       <Button id="btnreg" variant="primary" onClick={() => setModalShow(true)}>
+      <Button id="btnreg" variant="primary" onClick={() => setModalShow(true)}>
         Registrarse
       </Button>
       <MyVerticallyCenteredModal
@@ -35,5 +31,3 @@ export function Appr() {
     </>
   );
 }
-    
-

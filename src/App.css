@@ -929,6 +929,13 @@ align-items: center;
   position: absolute;
   right: 0;
   animation: slide-in-right 0.5s ease-in-out;
+  
+}
+.modal-content button{
+  padding: .7rem;
+ text-align: end;
+  border: none;
+  background-color: #A5C9CA;
 }
 
 @keyframes slide-in-right {
@@ -1131,3 +1138,26 @@ box-icon {
   margin-top: 0.5rem !important;
   border-radius: 9px;
 }
+
+.UserDetail {
+flex-direction: column;
+justify-content: center;
+  display: flex;
+  font-size: small;
+  color: white;
+  text-align: center;
+}
+.UserDetail button{
+  font-size: small;
+border-radius:10px ;
+}
+ .formLogin{
+border-radius: 10px;
+  background-color: #A5C9CA;
+  padding: 2rem;
+  height: 75vh;
+;
+ }
+ .modal-content{
+
+ }
