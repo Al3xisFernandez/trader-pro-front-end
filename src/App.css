@@ -1153,7 +1153,6 @@ justify-content: center;
 border-radius:10px ;
 }
  .formLogin{
-border-radius: 10px;
   background-color: #A5C9CA;
   padding: 2rem;
   height: 75vh;
@@ -1161,13 +1160,25 @@ border-radius: 10px;
 ;
  }
 
- .btnregister button{
+ button.btnregister {
   background: none;
   border: none;
   color: rgb(192, 185, 185);
  }
- .btnregister button:hover{
+ button.btnregister:hover{
   color: rgb(221, 206, 206);
   
  }
+button.btnbtn-primary{
+ background-color: none;
+}
+button.btnbtn-primary:hover{
+  color: rgb(126, 113, 113);
+}
+.aregister{
+  color: #202020;
+}
+.aregister:hover{
+  color: rgb(126, 113, 113);
 
+}

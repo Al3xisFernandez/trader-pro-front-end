@@ -9,8 +9,8 @@ function RightModal() {
   }
 
   return (
-    <div className='btnregister'>
-      <button onClick={toggle}>Registrarse</button>
+    <div>
+      <button className='btnregister' onClick={toggle}>Registrarse</button>
 
       {isOpen && (
         <div className="modal-right">

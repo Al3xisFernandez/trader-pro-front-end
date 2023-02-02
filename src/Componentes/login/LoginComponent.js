@@ -64,12 +64,12 @@ export default function LoginComponent() {
         </div>
       </div>
       <div className="d-grid">
-        <button type="submit" className="btn btn-primary">
+        <button  type="submit" className="btnbtn-primary">
           Enviar
         </button>
       </div>
       <p className="forgot-password text-right">
-        <a href="/SignUp">Registrarse</a>
+        <a className="aregister" href="/SignUp">Registrarse</a>
       </p>
     </form>
   );
