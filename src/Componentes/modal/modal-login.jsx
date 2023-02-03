@@ -10,14 +10,15 @@ function RightModal() {
 
   return (
     <div>
-      <button onClick={toggle}>Registrarse</button>
+      <button className='btnregister' onClick={toggle}>Registrarse</button>
 
       {isOpen && (
         <div className="modal-right">
           <div className="modal-content">
-            <h2>Modal Title</h2>
+            <button onClick={toggle}>X
+            </button>
             <LoginComponent />
-            <button onClick={toggle}>Close</button>
+            
 
           </div>
         </div>

@@ -19,6 +19,13 @@ export default function SignUp() {
     }).then((res)=> res.json())
     .then((data)=> {
         console.log(data, "userRegister");
+        if (data.status === "ok") {
+          alert("Usuario creado correctamente, ingresar?");
+          window.localStorage.setItem("token", data.data);
+          window.localStorage.setItem("loggedIn", true);
+
+          window.location.href = "/LoginComponent";
+        }
     });
 }
 return (
@@ -30,7 +37,7 @@ return (
         <input
           type="text"
           className="form-control"
-          placeholder="Juan"
+          placeholder="Nombre"
           onChange={(e) => setFname(e.target.value)}
         />
       </div>
@@ -39,7 +46,7 @@ return (
         <input
           type="text"
           className="form-control"
-          placeholder="Perez"
+          placeholder="Apellido"
           onChange={(e) => setLname(e.target.value)}
         />
       </div>
@@ -48,7 +55,7 @@ return (
         <input
           type="email"
           className="form-control"
-          placeholder="juan@perez.com"
+          placeholder="Email"
           onChange={(e) => setEmail(e.target.value)}
         />
       </div>
@@ -68,7 +75,7 @@ return (
         </button>
       </div>
       <p className="forgot-password text-right">
-        Already registered <a href="/LoginComponent">sign in?</a>
+        Ya esta registrado? <a href="/LoginComponent">Ingrese</a>
       </p>
     </form>
     </div>

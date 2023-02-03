@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react"; // eslint-disable-line
+import React, { useState } from "react"; 
 
 export default function LoginComponent() {
   const [email, setEmail] = useState("");
@@ -21,7 +21,7 @@ export default function LoginComponent() {
       .then((data) => {
         console.log(data, "userRegister");
         if (data.status === "ok") {
-          alert("login successful");
+          alert("Ingreso correctamente, ir al inicio?");
           window.localStorage.setItem("token", data.data);
           window.localStorage.setItem("loggedIn", true);
 
@@ -47,6 +47,7 @@ export default function LoginComponent() {
           type="password"
           className="form-control"
           placeholder="Ingrese su contraseña"
+          autoComplete="on"
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
@@ -63,12 +64,12 @@ export default function LoginComponent() {
         </div>
       </div>
       <div className="d-grid">
-        <button type="submit" className="btn btn-primary">
+        <button  type="submit" className="btnbtn-primary">
           Enviar
         </button>
       </div>
       <p className="forgot-password text-right">
-        <a href="/SignUp">Registrarse</a>
+        <a className="aregister" href="/SignUp">Registrarse</a>
       </p>
     </form>
   );

@@ -925,12 +925,13 @@ align-items: center;
 }
 
 .modal-right {
+  top: 4.5rem;
   z-index: 3;
   position: absolute;
   right: 0;
   animation: slide-in-right 0.5s ease-in-out;
-  
 }
+
 .modal-content button{
   padding: .7rem;
  text-align: end;
@@ -1152,12 +1153,32 @@ justify-content: center;
 border-radius:10px ;
 }
  .formLogin{
-border-radius: 10px;
   background-color: #A5C9CA;
   padding: 2rem;
   height: 75vh;
+
 ;
  }
- .modal-content{
 
+ button.btnregister {
+  background: none;
+  border: none;
+  color: rgb(192, 185, 185);
  }
+ button.btnregister:hover{
+  color: rgb(221, 206, 206);
+  
+ }
+button.btnbtn-primary{
+ background-color: none;
+}
+button.btnbtn-primary:hover{
+  color: rgb(126, 113, 113);
+}
+.aregister{
+  color: #202020;
+}
+.aregister:hover{
+  color: rgb(126, 113, 113);
+
+}
