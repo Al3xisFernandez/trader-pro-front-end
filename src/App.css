@@ -103,14 +103,44 @@
   color: #fffefe;
 }
 
-footer {
+.copyright__text {
+  transform: rotate(90deg) translate(-2rem, -3rem);
+  font-size: 1rem;
+  position: fixed;
+  bottom: 10vh;
+  right: 0;
+  text-align: right;
+  color: white;
+}
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 1rem;
+  left: .1rem;
+ }
+ .social-icons a {
+  color: white;
+  text-decoration: none;
+  font-size: 5vh;
+    padding: 0.4rem;
+    transition: .25s ease-in-out;;
+}
+  .social-icons a:hover {
+      color: pink
+  }
+/* footer {
   display: flex;
   flex-direction: column;
   min-height: 15vh;
-  border: 1px solid #202020;
-  /* -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75); */
-  /* -moz-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75); */
+  border: 1px solid #20202
+   -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75); 
+   -moz-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75); 
   box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+} */
+footer{
+border-top: 1px solid white;
+padding-top: 1rem;
 }
 
 footer p {
@@ -146,8 +176,7 @@ footer p {
 .footer-a a {
   color: rgb(167, 158, 158);
   text-decoration: none;
-  display: flex;
-  flex-direction: column;
+  font-weight: bolder;
 }
 
 .footer-a a:hover {
@@ -349,6 +378,7 @@ font-family: 'Racing Sans One', cursive; */
 
 .cursos-section {
   margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 .img-wrapper {
@@ -1025,6 +1055,10 @@ align-items: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .row>div{
+    margin: 1rem 0;
   }
 }
 
