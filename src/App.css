@@ -461,7 +461,7 @@ align-items: center;
   width: 100%;
 }
 
-/* ---------------------------------BUBBLES----------------------------- */
+/* ---------------------------------BUBBLES-----------------------------
 .bubbles {
   position: absolute;
   width: 100%;
@@ -952,7 +952,7 @@ align-items: center;
   --bubble-float-delay: 1s;
   --bubble-sway-delay: 1s;
   --bubble-sway-type: sway-left-to-right;
-}
+} */
 
 .modal-right {
   top: 4.5rem;
