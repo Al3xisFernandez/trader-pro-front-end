@@ -2,7 +2,7 @@ import React from "react";
 
 function VelasJaponesas() {
   return (
-    <div>
+    <div className="VelasJaponesas">
       <h1>Velas Japonesas</h1>
       <p>
         Una vela japonesa es una figura que representa la evolución del precio

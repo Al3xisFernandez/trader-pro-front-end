@@ -3,7 +3,6 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import UserDetails from "../login/UserDetails";
 import RightModal from "../modal/modal-login";
 import Perfil from "../perfiles/Perfil";
 
@@ -49,7 +48,6 @@ function Navb() {
           {isLoggedIn ? (
             <>
               <Perfil />
-              {/* <UserDetails /> */}
             </>
           ) : (
             <RightModal />

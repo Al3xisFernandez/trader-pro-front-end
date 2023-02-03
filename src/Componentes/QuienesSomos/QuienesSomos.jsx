@@ -11,7 +11,7 @@ const QuienesSomos = (props) => {
             </div>
             <div className="col-5 ">
               <h1>QUIENES SOMOS</h1>
-              <p>Somos una escuela de trading especializada en brindar educación y capacitación para personas interesadas en el mercado financiero. Ofrecemos cursos en línea y presenciales para todos los niveles de habilidad, desde principiantes hasta traders profesionales.</p>
+              <p>Somos una academia de trading especializada en brindar educación y capacitación para personas interesadas en el mercado financiero. Ofrecemos cursos en línea y presenciales para todos los niveles de habilidad, desde principiantes hasta traders profesionales.</p>
             </div>
           </div>
 

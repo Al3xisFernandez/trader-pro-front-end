@@ -1,8 +1,8 @@
 import React from "react";
 
-function AnanlisisTecnico() {
+function AnalisisTecnico() {
   return (
-    <div>
+    <div className="AnalisisTecnico">
       <h1>Ananlisis Tecnico</h1>
       <p>
         Es estudio de los movimientos del mercado, principalmente mediante el
@@ -252,4 +252,4 @@ function AnanlisisTecnico() {
   );
 }
 
-export default AnanlisisTecnico;
+export default AnalisisTecnico;
