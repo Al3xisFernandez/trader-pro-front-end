@@ -4,4 +4,4 @@
 
 ## TECNOLOGIAS USADAS 
 
-![TRADER PRO ](src/images/mern.png)
+![TRADER PRO ](src\images\mern.jpeg)
