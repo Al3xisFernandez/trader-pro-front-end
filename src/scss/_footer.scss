@@ -1,0 +1,38 @@
+footer{
+    border-top: 1px solid white;
+    padding-top: 1rem;
+    p {
+      vertical-align: bottom;
+      text-align: end;
+      margin-top: auto;
+      color: white;
+      font-size: x-small;
+    }
+    }
+    
+    .containfooter ul {
+        padding: 0 0 0 0;
+        display: block;
+        margin: auto;
+        box-icon {
+        margin: 15px;
+        fill: white;
+         li {
+        list-style: none;
+      }
+      }small {
+        display: flex;
+        flex-wrap: wrap;
+        height: 8em;
+        align-content: flex-end;
+      }
+      }
+      
+      .footer-a a {
+        color: rgb(167, 158, 158);
+        text-decoration: none;
+        font-weight: bolder;
+        &:hover{
+            color: $tp-teal;
+        }
+      }

@@ -1,0 +1,37 @@
+.UserDetail {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  font-size: small;
+  color: white;
+  text-align: center;
+}
+.UserDetail button {
+  font-size: small;
+  border-radius: 10px;
+}
+.formLogin {
+  background-color: #a5c9ca;
+  padding: 2rem;
+  height: 75vh;
+}
+button.btnregister {
+  background: none;
+  border: none;
+  color: rgb(192, 185, 185);
+}
+button.btnregister:hover {
+  color: rgb(221, 206, 206);
+}
+button.btnbtn-primary {
+  background-color: none;
+}
+button.btnbtn-primary:hover {
+  color: rgb(126, 113, 113);
+}
+.aregister {
+  color: #202020;
+}
+.aregister:hover {
+  color: rgb(126, 113, 113);
+}

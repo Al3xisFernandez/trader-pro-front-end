@@ -1,0 +1,9 @@
+.form-wrapper {
+  min-height: 75vh;
+  background-color: #395b64;
+  &.form-signup {
+    padding: 1rem;
+    background-color: #e7f6f2;
+    border-radius: 1rem;
+  }
+}

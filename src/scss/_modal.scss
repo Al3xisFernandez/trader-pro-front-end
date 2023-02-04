@@ -1,0 +1,26 @@
+.modal-right {
+  top: 4.5rem;
+  z-index: 3;
+  position: absolute;
+  right: 0;
+  animation: slide-in-right 0.5s ease-in-out;
+}
+
+.modal-content button {
+  padding: 0.7rem;
+  text-align: end;
+  border: none;
+  background-color: #a5c9ca;
+}
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+#modalbody {
+  width: 25rem;
+}
