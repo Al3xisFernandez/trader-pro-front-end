@@ -1,0 +1,27 @@
+.copyright__text {
+    transform: rotate(90deg) translate(-2rem, -3rem);
+    font-size: 1rem;
+    position: fixed;
+    bottom: 10vh;
+    right: 0;
+    text-align: right;
+    color: white;
+  }
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 1rem;
+    left: .1rem;
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 5vh;
+          padding: 0.4rem;
+          transition: .25s ease-in-out;
+          &hover {
+            color: $tp-lightest;
+        }
+      }
+   }
+   

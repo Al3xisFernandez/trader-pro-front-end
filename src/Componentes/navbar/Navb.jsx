@@ -3,7 +3,6 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import UserDetails from "../login/UserDetails";
 import RightModal from "../modal/modal-login";
 import Perfil from "../perfiles/Perfil";
 
@@ -36,11 +35,7 @@ function Navb() {
               >
                 Instagram
               </NavDropdown.Item>
-              <NavDropdown.Item
-                href="/Contactenos"
-                target="_blank"
-                rel="noreferrer"
-                >
+              <NavDropdown.Item href="/Contactenos">
                 Envíanos un mensaje
               </NavDropdown.Item>
             </NavDropdown>
@@ -49,7 +44,6 @@ function Navb() {
           {isLoggedIn ? (
             <>
               <Perfil />
-              {/* <UserDetails /> */}
             </>
           ) : (
             <RightModal />
