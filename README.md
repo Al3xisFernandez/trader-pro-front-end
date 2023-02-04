@@ -9,10 +9,7 @@
 
 ##  :abacus:  TECNOLOGIAS USADAS  :abacus:
 
-![TRADER PRO ](src/images/mern.png)
-
-![BootstrapSASS](https://github.com/Al3xisFernandez/trader-pro-front-end/blob/lautaroS/src/images/bssass.png)   
-
+![TECNOLOGIES]((https://github.com/Al3xisFernandez/trader-pro-front-end/blob/lautaroS/src/images/tecnologies.png))
 
 ## :mage_man:  Developers  :mage_man:
 
