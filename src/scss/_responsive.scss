@@ -8,6 +8,11 @@
 }
 
 @media only screen and (max-width: 780px) {
+
+  .text-qs{
+    color: $tp-teal;
+    font-weight: bolder;
+  }
   #logo-home {
     width: 80%;
   }
@@ -34,7 +39,16 @@
 }
 
 @media only screen and (max-width: 1020px) {
+
   .containfooter {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imgprofile {
     text-align: center;
     display: flex;
     flex-direction: column;

@@ -26,13 +26,13 @@ export default function SignUp() {
           window.localStorage.setItem("token", data.data);
           window.localStorage.setItem("loggedIn", true);
 
-          window.location.href = "/LoginComponent";
+          window.location.href = "/";
         }
       });
   };
   return (
-    <div className="form-wrapper d-flex justify-content-center align-items-center">
-      <form className="w-50 mx-auto form-signup" onSubmit={handleSubmit}>
+    <div className="form-wrapper d-flex justify-content-center align-items-center ">
+      <form className="w-50 mx-auto form-signup shadow-sharp" onSubmit={handleSubmit}>
         <h3>Registrarse</h3>
         <div className="mb-3">
           <label>Nombre</label>
@@ -71,7 +71,7 @@ export default function SignUp() {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <div className="d-grid">
+        <div className="d-grid" id="btnregistro">
           <button type="submit" className="btn btn-primary">
             Registrarse
           </button>

@@ -1,9 +1,29 @@
 .form-wrapper {
   min-height: 75vh;
   background-color: #395b64;
-  &.form-signup {
-    padding: 1rem;
-    background-color: #e7f6f2;
-    border-radius: 1rem;
-  }
+}
+.form-wrapper>.form-signup {
+  margin: 2rem;
+  padding: 1rem;
+  background-color: #E7F6F2;
+  border-radius: 1rem;
+}
+.shadow-sharp {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.2),
+    0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.1),
+    0 16px 16px rgba(0, 0, 0, 0.05);
+}
+
+#btnregistro button {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 2rem;
+  color: white;
+  background-color: rgb(63, 58, 58);
+  border: none;
+}
+
+#btnregistro button:hover {
+  color: rgb(247, 239, 239);
+  background-color: rgb(83, 82, 82);
 }

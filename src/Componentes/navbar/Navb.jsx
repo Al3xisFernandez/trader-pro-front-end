@@ -35,11 +35,7 @@ function Navb() {
               >
                 Instagram
               </NavDropdown.Item>
-              <NavDropdown.Item
-                href="/Contactenos"
-                target="_blank"
-                rel="noreferrer"
-                >
+              <NavDropdown.Item href="/Contactenos">
                 Envíanos un mensaje
               </NavDropdown.Item>
             </NavDropdown>

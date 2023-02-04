@@ -28,7 +28,9 @@
     margin: 30px;
   }
 }
-
+.qs-div{
+  min-height: 80vh!important;
+}
 .qs-section {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -42,8 +44,8 @@
   }
 }
 
-
-.imgprofile{
+.imgprofile {
+  margin-top: 10%!important;
   display: flex;
 }
 .imgprofile img {
@@ -51,8 +53,8 @@
   width: 12rem;
   padding: 1rem;
   border-radius: 50%;
- display: block;
- margin: auto;
+  display: block;
+  margin: auto;
 }
 
 @media only screen and (max-width: 1020px) {
@@ -64,8 +66,12 @@
     align-items: center;
   }
 }
-.imgprofile h3{
+
+.imgprofile h3 {
   display: block;
   margin: auto;
-flex-direction: column; 
+  flex-direction: column;
 }
+  
+
+

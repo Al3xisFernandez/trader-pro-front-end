@@ -9,7 +9,7 @@
     #a5c9ca
   );
   width: 100%;
-  height: 90vh;
+  min-height: 90vh;
 }
 
 .animation-area > .row {
@@ -17,6 +17,7 @@
 }
 
 .box-area {
+  
   position: absolute;
   top: 0;
   left: 0;

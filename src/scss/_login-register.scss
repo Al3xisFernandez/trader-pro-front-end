@@ -30,8 +30,14 @@ button.btnbtn-primary:hover {
   color: rgb(126, 113, 113);
 }
 .aregister {
+  text-decoration: none;
   color: #202020;
 }
 .aregister:hover {
   color: rgb(126, 113, 113);
 }
+
+
+.dgrid button {
+  border: none;
+  background: none; }

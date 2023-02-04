@@ -5,14 +5,14 @@ const QuienesSomos = (props) => {
     <>
       <section>
         <div className="animation-area">
-          <div className="row justify-content-center align-items-center">
-            <div className="col-5 img-wrapper">
+          <div className="row d-flex justify-content-center align-items-center pt-3 pb-3 flex-wrap qs-div w-100">
+            <div className="col-11 col-lg-5 img-wrapper">
               <img
                 src={require("../../images/la-mejor-academia-de-trading-de-la-historia.jpg")}
                 alt="TRADER PRO"
               />
             </div>
-            <div className="col-5 ">
+            <div className="col-11 col-lg-6 text-qs">
               <h1>QUIENES SOMOS</h1>
               <p>
                 Somos una academia de trading especializada en brindar educación
@@ -67,7 +67,7 @@ const QuienesSomos = (props) => {
         </div>
       </section>
 
-      <section className="row justify-content-center align-items-center qs-section">
+      <section className="row justify-content-center align-items-center qs-section pt-5">
         <div className="col-6 ">
           <img
             src={require("../../images/trader-inmortalcrypto.jpg")}
@@ -101,6 +101,7 @@ const QuienesSomos = (props) => {
           />
         </div>
         <div className="imgprofile">
+          <h3>Nuestro Equipo : </h3>
           <img src={require("../../images/perfi1.jpg")} alt="#" />
           <div>
             <h3>Alexis Fernandez</h3>
