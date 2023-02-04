@@ -22,18 +22,18 @@ import React from "react";
     <div className="col-lg-6 col-md-12">
     <a href="/AnalisisTecnico" className="btn-a"> <span className="btn-span">Analisis Tecnico</span> <i className="btn-i"></i> </a>
     </div>
-    <div className="lg-3 col-md-12">
+    <div className="col-lg-3 col-md-12">
     <a href="/VelasJaponesas" className="btn-a"> <span className="btn-span">Velas Japonesas</span> <i className="btn-i"></i> </a>
     </div>
   </div>
   <div className="row">
-    <div className="lg-4 col-md-12">
+    <div className="col-lg-4 col-md-12">
     <a href="/Tendencias" className="btn-a"> <span className="btn-span">Las tendencias</span> <i className="btn-i"></i> </a>
     </div>
-    <div className="lg-4 col-md-12">
+    <div className="col-lg-4 col-md-12">
     <a href="/Acciones" className="btn-a"> <span className="btn-span "> Las Acciones</span> <i className="btn-i"></i> </a>
     </div>
-    <div className="lg-4 col-md-12">
+    <div className="col-lg-4 col-md-12">
     <a href="/OpcionesFinancieras" className="btn-a"> <span className="btn-span">Opciones Financieras</span> <i className="btn-i"></i> </a>
     </div>
   </div>
