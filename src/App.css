@@ -112,23 +112,28 @@
   text-align: right;
   color: white;
 }
+
 .social-icons {
   display: flex;
   flex-direction: column;
   position: fixed;
   bottom: 1rem;
   left: .1rem;
- }
- .social-icons a {
+}
+
+.social-icons a {
   color: white;
   text-decoration: none;
   font-size: 5vh;
-    padding: 0.4rem;
-    transition: .25s ease-in-out;;
+  padding: 0.4rem;
+  transition: .25s ease-in-out;
+  ;
 }
-  .social-icons a:hover {
-      color: pink
-  }
+
+.social-icons a:hover {
+  color: pink
+}
+
 /* footer {
   display: flex;
   flex-direction: column;
@@ -138,9 +143,9 @@
    -moz-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75); 
   box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
 } */
-footer{
-border-top: 1px solid white;
-padding-top: 1rem;
+footer {
+  border-top: 1px solid white;
+  padding-top: 1rem;
 }
 
 footer p {
@@ -1117,7 +1122,7 @@ font-family: 'Racing Sans One', cursive; */
     align-items: center;
   }
 
-  .row>div{
+  .row>div {
     margin: 1rem 0;
   }
 }
@@ -1278,6 +1283,7 @@ button.btnbtn-primary:hover {
 }
 
 .aregister {
+  text-decoration: none;
   color: #202020;
 }
 
@@ -1321,18 +1327,51 @@ button.btnbtn-primary:hover {
   padding: 5rem;
 }
 
-.PerfilDeInversor{
-  color:white;
+.PerfilDeInversor {
+  color: white;
   text-align: center;
-padding: 5rem;
+  padding: 5rem;
 }
-.Tendencias{
-  color:white;
+
+.Tendencias {
+  color: white;
   text-align: center;
-padding: 5rem;
+  padding: 5rem;
 }
-.VelasJaponesas{
-  color:white;
+
+.VelasJaponesas {
+  color: white;
   text-align: center;
-padding: 5rem;
+  padding: 5rem;
+}
+
+.dgrid button {
+  border: none;
+  background: none;
+}
+.imgprofile{
+  display: flex;
+}
+.imgprofile img {
+  height: 12rem;
+  width: 12rem;
+  padding: 1rem;
+  border-radius: 50%;
+ display: block;
+ margin: auto;
+}
+
+@media only screen and (max-width: 1020px) {
+  .imgprofile {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.imgprofile h3{
+  display: block;
+  margin: auto;
+flex-direction: column; 
 }
