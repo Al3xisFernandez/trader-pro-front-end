@@ -11,6 +11,8 @@
 
 ![TRADER PRO ](src/images/mern.png)
 
+![Bootstrap](src/images/bootstrap.png   ![Bootstrap](src/images/sass.png
+
 ## :mage_man:  Developers  :mage_man:
 
 - Alexis Fernandez [github.com/Al3xisFernandez](https://github.com/Al3xisFernandez) ![DEV](https://img.shields.io/badge/%20DEV-%20%20%20%20-%23a5c9ca)
