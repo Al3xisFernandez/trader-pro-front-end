@@ -2,7 +2,7 @@ import React from "react";
 
 const AbrirCuentaEnBroker = () => {
   return (
-    <div>
+    <div className="aceb">
       <h1>¿Cómo abrir una cuenta?</h1>
       <p>
         1- Cubrir el formulario de alta online: Una vez seleccionado el broker

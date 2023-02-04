@@ -10,7 +10,7 @@ function RightModal() {
 
   return (
     <div>
-      <button className='btnregister' onClick={toggle}>Registrarse</button>
+      <button className='btnregister' onClick={toggle}>Ingresar</button>
 
       {isOpen && (
         <div className="modal-right">

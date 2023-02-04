@@ -1,8 +1,8 @@
 import React from "react";
 
-const IntrumentosFinancieros = () => {
+const InstrumentosFinancieros = () => {
   return (
-    <div>
+    <div className="InstrumentosFinancieros">
       <h1>CURSO DE INVERSIONES</h1>
       <h3>Instrumentos de Renta Fija y Variable.</h3>
       <p>
@@ -353,4 +353,4 @@ const IntrumentosFinancieros = () => {
   );
 };
 
-export default IntrumentosFinancieros;
+export default InstrumentosFinancieros;

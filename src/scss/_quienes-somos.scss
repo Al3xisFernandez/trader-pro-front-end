@@ -41,3 +41,31 @@
     margin: auto;
   }
 }
+
+
+.imgprofile{
+  display: flex;
+}
+.imgprofile img {
+  height: 12rem;
+  width: 12rem;
+  padding: 1rem;
+  border-radius: 50%;
+ display: block;
+ margin: auto;
+}
+
+@media only screen and (max-width: 1020px) {
+  .imgprofile {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.imgprofile h3{
+  display: block;
+  margin: auto;
+flex-direction: column; 
+}

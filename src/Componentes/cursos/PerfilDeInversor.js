@@ -2,7 +2,7 @@ import React from "react";
 
 const PerfilDeInversor = () => {
   return (
-    <div>
+    <div className="PerfilDeInversor">
       <h1>Perfil del Inversor</h1>
       <p>
         Inversor conservador: Dentro de este perfil se englobarían, empezando

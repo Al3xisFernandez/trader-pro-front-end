@@ -30,6 +30,7 @@ export default function LoginComponent() {
       });
   }
   return (
+    <div className="form-wrapper d-flex justify-content-center align-items-center">
     <form className="formLogin" onSubmit={handleSubmit}>
       <h3>Ingresar</h3>
       <div className="mb-3">
@@ -63,7 +64,7 @@ export default function LoginComponent() {
           </label>
         </div>
       </div>
-      <div className="d-grid">
+      <div className="dgrid">
         <button  type="submit" className="btnbtn-primary">
           Enviar
         </button>
@@ -72,5 +73,6 @@ export default function LoginComponent() {
         <a className="aregister" href="/SignUp">Registrarse</a>
       </p>
     </form>
+    </div>
   );
 }
