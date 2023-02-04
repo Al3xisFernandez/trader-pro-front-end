@@ -1,0 +1,99 @@
+#logo-home {
+  margin: auto;
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+  img {
+    margin: auto;
+    width: 100%;
+  }
+}
+#navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#navbar-logo {
+  background-color: #84a0a1b4;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  width: 10vw;
+}
+
+#navbar-logo img {
+  width: 100%;
+}
+
+nav ul {
+  z-index: 2;
+  color: rgb(3, 3, 3);
+  list-style: none;
+  list-style: none;
+}
+
+nav li {
+  line-height: 25px;
+  position: relative;
+}
+
+nav li ul {
+  position: absolute;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: rgb(241, 223, 223);
+  left: 1rem;
+}
+
+nav a:hover {
+  color: rgb(221, 206, 206);
+}
+
+nav li:hover ul {
+  display: block;
+  color: rgb(221, 206, 206);
+}
+
+nav li ul {
+  display: none;
+}
+
+nav > ul {
+  color: rgb(0, 0, 0);
+  display: table;
+  padding-right: 3rem;
+}
+
+nav li li {
+  width: 160%;
+  background-color: rgb(61, 58, 58);
+}
+
+nav > ul > li > ul {
+  top: 100%;
+  right: 0px;
+}
+
+div .dropdown-menu {
+  background-color: rgb(61, 58, 58);
+}
+
+a.dropdown-item {
+  color: rgb(241, 223, 223);
+}
+
+a.dropdown-item:hover {
+  color: rgb(221, 206, 206);
+  background: rgb(59, 57, 57);
+}
+
+box-icon {
+  fill: white;
+  margin-top: 0.5rem !important;
+  border-radius: 9px;
+}

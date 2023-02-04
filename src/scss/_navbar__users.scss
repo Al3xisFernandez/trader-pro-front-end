@@ -1,0 +1,64 @@
+.perfil {
+  height: 2rem;
+  display: flex;
+  img {
+    height: 2rem;
+    border-radius: 1rem;
+  }
+  h6 {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    color: #fffefe;
+  }
+}
+
+.cerrarsesion {
+  font-size: x-small;
+  width: 5.5rem;
+  height: 2rem;
+  border-radius: 1rem;
+}
+
+.login {
+  font-size: x-small;
+  width: 5.5rem;
+  height: 2rem;
+  border-radius: 1rem;
+}
+
+#btnregistro {
+  text-align: center;
+}
+
+#btnregistro button {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 2rem;
+  color: white;
+  background-color: rgb(63, 58, 58);
+  border: none;
+}
+
+#btnregistro button:hover {
+  color: rgb(247, 239, 239);
+  background-color: rgb(83, 82, 82);
+}
+#btnregi a {
+  margin-left: 15px;
+}
+#btnreg {
+  width: 5rem;
+  height: 1rem;
+  color: rgb(167, 158, 158);
+  background-color: transparent;
+  border: none;
+}
+
+#btnreg:hover {
+  color: rgb(207, 203, 203);
+  background-color: none;
+}
+#btnontent {
+  width: 25rem;
+}
