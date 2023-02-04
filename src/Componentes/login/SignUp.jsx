@@ -26,7 +26,7 @@ export default function SignUp() {
           window.localStorage.setItem("token", data.data);
           window.localStorage.setItem("loggedIn", true);
 
-          window.location.href = "/LoginComponent";
+          window.location.href = "/";
         }
       });
   };
