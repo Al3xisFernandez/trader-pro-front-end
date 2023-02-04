@@ -11,6 +11,7 @@ function ContactoForm() {
       <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
         <Form.Label>Escribe tu mensaje</Form.Label>
         <Form.Control as="textarea" rows={3} />
+        <button type="button" class="btn btn-secondary mt-2">Enviar</button>
       </Form.Group>
     </Form>
   );

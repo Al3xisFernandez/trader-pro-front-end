@@ -1,4 +1,5 @@
-# :coin:   TRADER PRO   :coin:
+# :coin:   TRADER PRO   :coin: 
+### Front-end
 
 ![TRADER PRO ](src/images/logo.png)
 
@@ -8,7 +9,7 @@
 
 ##  :abacus:  TECNOLOGIAS USADAS  :abacus:
 
-![TRADER PRO ](src/images/mern.png)
+![TECNOLOGIES](https://github.com/Al3xisFernandez/trader-pro-front-end/blob/lautaroS/src/images/tecnologies.png)
 
 ## :mage_man:  Developers  :mage_man:
 

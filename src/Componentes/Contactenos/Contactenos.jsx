@@ -3,7 +3,7 @@ import ContactoForm from "./ContactoForm";
 function Contactenos() {
   return (
     
-      <div className="div-contacto">
+      <div className="div-contacto flex-md-column flex-lg-row">
         <div className="contacto-datos-wrapper">
           <h2>TELÉFONO</h2>
           <p>1233456</p>

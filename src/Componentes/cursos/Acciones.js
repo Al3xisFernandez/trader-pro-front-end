@@ -2,7 +2,7 @@ import React from "react";
 
 function Acciones() {
   return (
-    <div>
+    <div className="acciones">
       <h1>Acciones</h1>
       <p>
         Las acciones son valores negociables que representan la mínima expresión

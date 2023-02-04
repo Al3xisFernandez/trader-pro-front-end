@@ -2,7 +2,7 @@ import React from "react";
 
 const Intro = () => {
   return (
-    <div>
+    <div className="Intro">
       <h1>El Mercado Financiero</h1>
       <p>
         ¿Qué es el mercado? Un mercado se puede definir como un ámbito o lugar

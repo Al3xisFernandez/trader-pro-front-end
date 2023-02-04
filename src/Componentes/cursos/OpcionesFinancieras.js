@@ -2,7 +2,7 @@ import React from "react";
 
 function OpcionesFinancieras() {
   return (
-    <div>
+    <div className="OpcionesFinancieras">
       <h1>Opciones Financieras</h1>
       <p>
         Las opciones las vemos en el curso avanzado, sin embargo, quiero que se
