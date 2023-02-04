@@ -1,4 +1,5 @@
-# :coin:   TRADER PRO   :coin:
+# :coin:   TRADER PRO   :coin: 
+### Front-end
 
 ![TRADER PRO ](src/images/logo.png)
 
