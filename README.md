@@ -11,7 +11,8 @@
 
 ![TRADER PRO ](src/images/mern.png)
 
-![Bootstrap](src/images/bootstrap.png)   ![Bootstrap](src/images/sass.png)
+![Bootstrap](src/images/bootstrap.png)   
+![SASS](src/images/sass.png)
 
 ## :mage_man:  Developers  :mage_man:
 
