@@ -100,7 +100,7 @@ const QuienesSomos = (props) => {
             className="img-100"
           />
         </div>
-        <div className="imgprofile">
+        <div className="imgprofile bg-secondary rounded-top pt-3 pb-3">
           <h3>Nuestro Equipo : </h3>
           <img src={require("../../images/perfi1.jpg")} alt="#" />
           <div>
