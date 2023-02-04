@@ -11,7 +11,7 @@
 
 ![TRADER PRO ](src/images/mern.png)
 
-![BootstrapSASS](src/images/bssass.png)   
+![BootstrapSASS](https://github.com/Al3xisFernandez/trader-pro-front-end/blob/lautaroS/src/images/bssass.png)   
 
 
 ## :mage_man:  Developers  :mage_man:
