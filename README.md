@@ -1,7 +1,7 @@
 # TRADER PRO :coin:
 
-![TRADER PRO ](src/images/logo.png?raw=true)
+![TRADER PRO ] (src/images/logo.png)
 
 ## TECNOLOGIAS USADAS 
 
-![TRADER PRO ](src/images/mern.png?raw=true)
+![TRADER PRO ] (src/images/mern.jpeg)
