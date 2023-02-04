@@ -33,6 +33,7 @@ footer{
         text-decoration: none;
         font-weight: bolder;
         &:hover{
+          transition: $trasition-n-out;
             color: $tp-teal;
         }
       }
