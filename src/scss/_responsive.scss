@@ -1,0 +1,62 @@
+@media only screen and (max-width: 425px) {
+  #logo-home {
+    width: 95% !important;
+  }
+  #logo-home img {
+    padding-top: 20% !important;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+
+  .text-qs{
+    color: $tp-teal;
+    font-weight: bolder;
+  }
+  #logo-home {
+    width: 80%;
+  }
+  #logo-home img {
+    padding-top: 10%;
+  }
+
+  .banner-text p {
+    font-size: 2rem;
+  }
+
+  .qs-section {
+    flex-direction: column;
+  }
+
+  .col-6,
+  .col-4 {
+    width: 80% !important;
+  }
+
+  .col-5 {
+    width: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+
+  .containfooter {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imgprofile {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row > div {
+    margin: 1rem 0;
+  }
+}

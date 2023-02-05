@@ -1,0 +1,21 @@
+.div-contacto {
+  min-height: 75vh;
+  width: 100%;
+  background-color: #e7f6f2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contacto-datos-wrapper {
+  width: 45%;
+  & > iframe {
+    width: 100%;
+  }
+}
+.form-div {
+  width: 45%;
+}
+
+.contacto-form {
+  width: 100%;
+}
