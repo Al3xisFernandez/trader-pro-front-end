@@ -1,46 +1,53 @@
-import React, { useState } from "react";
-export default function SignUp() {
-  const [fname, setFname] = useState("");
-  const [lname, setLname] = useState("");
+import { useState } from "react";
+import axios from "axios";
+
+function SignUp() {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(fname, lname, email, password);
-    fetch("http://localhost:5000/register", {
-      method: "POST",
-      crossDomain: true,
-      headers: {
-        "Content-Type": "application/json",
-        accept: "application/json",
-        "access-Control-Allow-Origin": "*",
-      },
-      body: JSON.stringify({ fname, lname, email, password }),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data, "userRegister");
-        if (data.status === "ok") {
-          alert("Usuario creado correctamente, ingresar?");
-          window.localStorage.setItem("token", data.data);
-          window.localStorage.setItem("loggedIn", true);
-
-          window.location.href = "/";
-        }
-      });
-  };
+  async function save(event) {
+    event.preventDefault();
+    try {
+      await axios
+        .post("http://localhost:5000/user/create", {
+          firstname: firstName,
+          lastname: lastName,
+          email: email,
+          password: password,
+        })
+        .then((res) => {
+          console.log(res);
+          const data = res.data;
+          if (data.status === true) {
+            alert("registro exitoso");
+            window.localStorage.setItem("token", data.data);
+            window.localStorage.setItem("loggedIn", true);
+            window.location.href = "/";
+          } else {
+            alert("registro fallido");
+          }
+        });
+    } catch (err) {
+      alert(err);
+    }
+  }
   return (
-    <div className="form-wrapper d-flex justify-content-center align-items-center ">
-      <form className="w-50 mx-auto form-signup shadow-sharp" onSubmit={handleSubmit}>
-        <h3>Registrarse</h3>
-        <div className="mb-3">
+    <div className="form-wrapper d-flex justify-content-center align-items-center">
+      <form className="w-50 mx-auto form-signup shadow-sharp">
+        <h1>Registrarse</h1>
+        <div>
           <label>Nombre</label>
           <input
             type="text"
             className="form-control"
+            name="firstName"
             placeholder="Nombre"
-            onChange={(e) => setFname(e.target.value)}
+            value={firstName}
+            onChange={(event) => {
+              setFirstName(event.target.value);
+            }}
           />
         </div>
         <div className="mb-3">
@@ -48,38 +55,54 @@ export default function SignUp() {
           <input
             type="text"
             className="form-control"
+            name="lastName"
             placeholder="Apellido"
-            onChange={(e) => setLname(e.target.value)}
+            value={lastName}
+            onChange={(event) => {
+              setLastName(event.target.value);
+            }}
           />
         </div>
+
         <div className="mb-3">
-          <label>Email</label>
+          <label>email</label>
           <input
             type="email"
             className="form-control"
+            name="email"
             placeholder="Email"
-            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+            onChange={(event) => {
+              setEmail(event.target.value);
+            }}
           />
         </div>
+
         <div className="mb-3">
-          <label>Contraseña</label>
+          <label>password</label>
           <input
             type="password"
             className="form-control"
-            placeholder="***********"
+            name="password"
+            placeholder="****************"
+            value={password}
             autoComplete="on"
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={(event) => {
+              setPassword(event.target.value);
+            }}
           />
         </div>
         <div className="d-grid" id="btnregistro">
-          <button type="submit" className="btn btn-primary">
-            Registrarse
+          <button type="submit" className="btn btn-primary mt-4" onClick={save}>
+            Registrar
           </button>
+          <p className="forgot-password text-right">
+            Ya esta registrado? <a href="/LoginComponent">Ingrese</a>
+          </p>
         </div>
-        <p className="forgot-password text-right">
-          Ya esta registrado? <a href="/LoginComponent">Ingrese</a>
-        </p>
       </form>
     </div>
   );
 }
+
+export default SignUp;
