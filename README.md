@@ -11,6 +11,8 @@
 
 ![TECNOLOGIES](https://github.com/Al3xisFernandez/trader-pro-front-end/blob/lautaroS/src/images/tecnologies.png)
 
+# 	:eye_speech_bubble: [Back-end](https://github.com/Al3xisFernandez/trader-pro-back-end.git)
+
 ## :mage_man:  Developers  :mage_man:
 
 - Alexis Fernandez [github.com/Al3xisFernandez](https://github.com/Al3xisFernandez) ![DEV](https://img.shields.io/badge/%20DEV-%20%20%20%20-%23a5c9ca)
