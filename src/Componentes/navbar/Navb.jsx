@@ -3,8 +3,8 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import RightModal from "../modal/modal-login";
 import Perfil from "../perfiles/Perfil";
+import RegisterModal from "../modal/modal-login";
 
 function Navb() {
   const isLoggedIn = window.localStorage.getItem("loggedIn");
@@ -46,7 +46,7 @@ function Navb() {
               <Perfil />
             </>
           ) : (
-            <RightModal />
+            <RegisterModal />
           )}
         </Navbar.Collapse>
       </Container>

@@ -5,11 +5,13 @@
   justify-content: center;
   align-items: center;
   padding-top: 5%;
+
   img {
     margin: auto;
     width: 100%;
   }
 }
+
 #navbar-container {
   display: flex;
   flex-direction: row;
@@ -63,7 +65,7 @@ nav li ul {
   display: none;
 }
 
-nav > ul {
+nav>ul {
   color: rgb(0, 0, 0);
   display: table;
   padding-right: 3rem;
@@ -74,7 +76,7 @@ nav li li {
   background-color: rgb(61, 58, 58);
 }
 
-nav > ul > li > ul {
+nav>ul>li>ul {
   top: 100%;
   right: 0px;
 }
@@ -96,4 +98,8 @@ box-icon {
   fill: white;
   margin-top: 0.5rem !important;
   border-radius: 9px;
+}
+
+body.modal-open {
+  overflow: auto !important;
 }

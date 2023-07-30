@@ -1,13 +1,14 @@
 .form-wrapper {
   min-height: 75vh;
-  background-color: #395b64;
+  background-color: #A5C9CA;
 }
+
 .form-wrapper>.form-signup {
-  margin: 2rem;
-  padding: 1rem;
-  background-color: #E7F6F2;
-  border-radius: 1rem;
+  background-color: #A5C9CA;
+  padding: 2rem;
+  height: 75vh;
 }
+
 .shadow-sharp {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.2),
     0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.1),
@@ -19,11 +20,63 @@
   height: 3rem;
   border-radius: 2rem;
   color: white;
-  background-color: rgb(63, 58, 58);
+  background-color: #A5C9CA;
   border: none;
 }
 
 #btnregistro button:hover {
   color: rgb(247, 239, 239);
   background-color: rgb(83, 82, 82);
+}
+
+button.btnregister {
+  color: black;
+  text-align: center;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btnregisternav:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.btnregisternav {
+  background: none;
+  color: rgb(255 255 255 / 55%);
+  border: none;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btnbtnregister {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  border-width: 0.5px;
+  background-color: #a5c9ca;
+  margin: 5px;
+  cursor: pointer;
+}
+
+div.mb-3 {
+  position: relative;
+}
+
+input.form-control {
+  width: 100%;
+  padding-right: 30px;
+}
+.password-toggle {
+  position: absolute;
+  top: 70%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
 }

@@ -6,38 +6,121 @@
   color: white;
   text-align: center;
 }
+
 .UserDetail button {
   font-size: small;
   border-radius: 10px;
 }
+
 .formLogin {
-  background-color: #a5c9ca;
+  background-color: #A5C9CA;
   padding: 2rem;
   height: 75vh;
+
 }
+
 button.btnregister {
   background: none;
-  border: none;
+  justify-content: center;
   color: rgb(192, 185, 185);
+  border: 1px solid black;
+
 }
+
 button.btnregister:hover {
   color: rgb(221, 206, 206);
 }
-button.btnbtn-primary {
-  background-color: none;
+
+#btnbtnregister:hover {
+  color: rgb(221, 206, 206);
 }
-button.btnbtn-primary:hover {
-  color: rgb(126, 113, 113);
-}
+
 .aregister {
   text-decoration: none;
   color: #202020;
 }
+
 .aregister:hover {
   color: rgb(126, 113, 113);
 }
 
+.d-grid {
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: -10px;
 
-.dgrid button {
-  border: none;
-  background: none; }
+}
+
+.validation-text {
+  font-size: 12px;
+  display: flex;
+}
+
+.validation-message {
+  &.valid {
+    color: green;
+  }
+
+  &.invalid {
+    color: red;
+  }
+}
+
+.small-text {
+  font-size: xx-small;
+}
+
+.mb-3 p {
+  color: red;
+  font-size: x-small;
+}
+
+.d-grid button:hover {
+  color: #BDCBCC;
+}
+
+form.form-signup {
+  background-color: #a5c9ca;
+  padding: 1rem 2rem 4rem;
+  height: 75vh;
+}
+
+.input-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+button.btnregister {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+
+}
+
+.password-requirements {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5px;
+}
+.validation-message {
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.validation-text {
+  display: inline-block;
+  margin-right: 15px;
+
+}

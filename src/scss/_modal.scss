@@ -4,13 +4,14 @@
   position: absolute;
   right: 0;
   animation: slide-in-right 0.5s ease-in-out;
+  background-color: #A5C9CA;
 }
 
 .modal-content button {
   padding: 0.7rem;
   text-align: end;
   border: none;
-  background-color: #a5c9ca;
+  background-color: #A5C9CA;
 }
 @keyframes slide-in-right {
   from {
@@ -24,3 +25,4 @@
 #modalbody {
   width: 25rem;
 }
+

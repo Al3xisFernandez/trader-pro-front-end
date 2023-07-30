@@ -15,15 +15,16 @@ import OpcionesFinancieras from "./cursos/OpcionesFinancieras";
 import PerfilDeInversor from "./cursos/PerfilDeInversor";
 import VelasJaponesas from "./cursos/VelasJaponesas";
 import Tendencias from "./cursos/Tendencias";
+import RegisterModal from "./modal/modal-login";
 
 const Pages = () => {
     return (
         <section>
             <Switch>
-                <Route path="/"  exact component={Inicio}/>
-                <Route path="/SignUp"  exact component={SignUp}/>
-                <Route path="/LoginComponent"  exact component={LoginComponent}/>
-                <Route path="/"  exact component={UserDetails}/>
+                <Route path="/" exact component={Inicio} />
+                <Route path="/SignUp" exact component={SignUp} />
+                <Route path="/LoginComponent" exact component={LoginComponent} />
+                <Route path="/" exact component={UserDetails} />
                 <Route path="/QuienesSomos" exact component={QuienesSomos} />
                 <Route path="/Contactenos" exact component={Contactenos} />
                 <Route path="/Intro" exact component={Intro} />
@@ -35,6 +36,7 @@ const Pages = () => {
                 <Route path="/PerfilDeInversor" exact component={PerfilDeInversor} />
                 <Route path="/VelasJaponesas" exact component={VelasJaponesas} />
                 <Route path="/Tendencias" exact component={Tendencias} />
+                <Route path="/RegisterModal" exact component={RegisterModal} />
 
             </Switch>
         </section>

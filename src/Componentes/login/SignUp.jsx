@@ -1,53 +1,105 @@
-import { useState } from "react";
-import axios from "axios";
+import React, { useState, useRef, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 
-function SignUp() {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
+export default function SignUp({ handleRegistrationSuccess }) {
+  const [fname, setFname] = useState("");
+  const [lname, setLname] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [passwordStrength, setPasswordStrength] = useState({
+    length: false,
+    number: false,
+    specialCharacter: false,
+    uppercase: false,
+    lowercase: false,
+  });
+  const [showPassword, setShowPassword] = useState(false);
+  const [showPasswordRequirements, setShowPasswordRequirements] = useState(
+    false
+  );
+  const [registrationError, setRegistrationError] = useState("");
+  const passwordInputRef = useRef(null);
 
-  async function save(event) {
-    event.preventDefault();
-    try {
-      await axios
-        .post("http://localhost:5000/user/create", {
-          firstname: firstName,
-          lastname: lastName,
-          email: email,
-          password: password,
-        })
-        .then((res) => {
-          console.log(res);
-          const data = res.data;
-          if (data.status === true) {
-            alert("registro exitoso");
-            window.localStorage.setItem("token", data.data);
-            window.localStorage.setItem("loggedIn", true);
-            window.location.href = "/";
-          } else {
-            alert("registro fallido");
-          }
-        });
-    } catch (err) {
-      alert(err);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(fname, lname, email, password);
+    fetch("http://localhost:5000/register", {
+      method: "POST",
+      crossDomain: true,
+      headers: {
+        "Content-Type": "application/json",
+        accept: "application/json",
+        "access-Control-Allow-Origin": "*",
+      },
+      body: JSON.stringify({
+        fname,
+        lname,
+        email,
+        password,
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data, "userRegister");
+        if (data.status === "ok") {
+          window.localStorage.setItem("token", data.data);
+          handleRegistrationSuccess();
+        } else if (data.error) {
+          setRegistrationError(data.error);
+        }
+      });
+  };
+
+  const handlePasswordChange = (e) => {
+    const passwordValue = e.target.value;
+    setPassword(passwordValue);
+    setPasswordStrength(checkPasswordStrength(passwordValue));
+  };
+
+  const checkPasswordStrength = (password) => {
+    const strength = {
+      length: password.length >= 8,
+      number: /\d/.test(password),
+      specialCharacter: /\W/.test(password),
+      uppercase: /[A-Z]/.test(password),
+      lowercase: /[a-z]/.test(password),
+    };
+
+    return strength;
+  };
+
+  const handlePasswordInputFocus = () => {
+    setShowPasswordRequirements(true);
+  };
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
+
+  const getPasswordInputType = () => {
+    return showPassword ? "text" : "password";
+  };
+
+  useEffect(() => {
+    if (passwordInputRef.current === document.activeElement) {
+      setShowPasswordRequirements(true);
     }
-  }
+  }, []);
+
   return (
-    <div className="form-wrapper d-flex justify-content-center align-items-center">
-      <form className="w-50 mx-auto form-signup shadow-sharp">
-        <h1>Registrarse</h1>
-        <div>
+    <div >
+      <form className="form-signup" onSubmit={handleSubmit}>
+        <h3>Registrarse</h3>
+        <div className="mb-3">
           <label>Nombre</label>
           <input
             type="text"
             className="form-control"
-            name="firstName"
             placeholder="Nombre"
-            value={firstName}
-            onChange={(event) => {
-              setFirstName(event.target.value);
-            }}
+            required
+            autoFocus
+            onChange={(e) => setFname(e.target.value)}
           />
         </div>
         <div className="mb-3">
@@ -55,54 +107,101 @@ function SignUp() {
           <input
             type="text"
             className="form-control"
-            name="lastName"
             placeholder="Apellido"
-            value={lastName}
-            onChange={(event) => {
-              setLastName(event.target.value);
-            }}
+            required
+            onChange={(e) => setLname(e.target.value)}
           />
         </div>
-
         <div className="mb-3">
-          <label>email</label>
+          <label>Email</label>
           <input
             type="email"
             className="form-control"
-            name="email"
             placeholder="Email"
-            value={email}
-            onChange={(event) => {
-              setEmail(event.target.value);
-            }}
+            required
+            onChange={(e) => setEmail(e.target.value)}
           />
+          {registrationError && (
+            <p className="error-message">{registrationError}</p>
+          )}
         </div>
-
         <div className="mb-3">
-          <label>password</label>
+          <label>Contraseña</label>
           <input
-            type="password"
+            ref={passwordInputRef}
+            type={getPasswordInputType()}
             className="form-control"
-            name="password"
-            placeholder="****************"
-            value={password}
+            placeholder="***********"
+            required
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}$"
             autoComplete="on"
-            onChange={(event) => {
-              setPassword(event.target.value);
-            }}
+            onChange={handlePasswordChange}
+            onFocus={handlePasswordInputFocus}
           />
+          {registrationError && (
+            <p className="error-message">{registrationError}</p>
+          )}
+          <span
+            className="password-toggle"
+            onClick={togglePasswordVisibility}
+          >
+            <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} />
+          </span>
         </div>
-        <div className="d-grid" id="btnregistro">
-          <button type="submit" className="btn btn-primary mt-4" onClick={save}>
-            Registrar
+        {showPasswordRequirements && (
+          <div className="password-requirements">
+            <p className="small-text">
+              La contraseña debe tener:
+              <br />
+              <span
+                className={`validation-message ${passwordStrength.length ? "valid" : "invalid"
+                  }`}
+              >
+                {passwordStrength.length ? "✔" : "✖"}
+              </span>
+              <span className="validation-text">más de 8 caracteres</span>
+              <br />
+              <span
+                className={`validation-message ${passwordStrength.number ? "valid" : "invalid"
+                  }`}
+              >
+                {passwordStrength.number ? "✔" : "✖"}
+              </span>
+              <span className="validation-text">Un número</span>
+              <br />
+              <span
+                className={`validation-message ${passwordStrength.specialCharacter ? "valid" : "invalid"
+                  }`}
+              >
+                {passwordStrength.specialCharacter ? "✔" : "✖"}
+              </span>
+              <span className="validation-text">Un caracter especial</span>
+              <br />
+              <span
+                className={`validation-message ${passwordStrength.uppercase ? "valid" : "invalid"
+                  }`}
+              >
+                {passwordStrength.uppercase ? "✔" : "✖"}
+              </span>
+              <span className="validation-text">Una letra mayúscula</span>
+              <br />
+              <span
+                className={`validation-message ${passwordStrength.lowercase ? "valid" : "invalid"
+                  }`}
+              >
+                {passwordStrength.lowercase ? "✔" : "✖"}
+              </span>
+              <span className="validation-text">Una letra minúscula</span>
+            </p>
+          </div>
+         )}
+        
+        <div className="d-grid">
+          <button type="submit">
+            Registrarse
           </button>
-          <p className="forgot-password text-right">
-            Ya esta registrado? <a href="/LoginComponent">Ingrese</a>
-          </p>
         </div>
       </form>
     </div>
   );
 }
-
-export default SignUp;
