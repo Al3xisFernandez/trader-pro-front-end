@@ -6,15 +6,15 @@ import ActualFooter from './Componentes/Footer/ActualFooter';
 const App = () => {
     return (
         <div className='app'>
-           <Router>
-            <Navb />
-            <Pages />
-            <Footerv2 />
-            <ActualFooter/>
+            <Router>
+                <Navb />
+                <Pages />
+                <Footerv2 />
+                <ActualFooter />
             </Router>
         </div>
     );
-  
+
 }
 
 export default App;

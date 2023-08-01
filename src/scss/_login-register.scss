@@ -16,7 +16,6 @@
   background-color: #A5C9CA;
   padding: 2rem;
   height: 75vh;
-
 }
 
 button.btnregister {
@@ -123,4 +122,7 @@ button.btnregister {
   display: inline-block;
   margin-right: 15px;
 
+}
+.modal-content button {
+  border-radius: 20px;
 }

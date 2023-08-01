@@ -3,8 +3,8 @@
   z-index: 3;
   position: absolute;
   right: 0;
-  animation: slide-in-right 0.5s ease-in-out;
   background-color: #A5C9CA;
+  border-radius: 20px;
 }
 
 .modal-content button {
@@ -13,10 +13,12 @@
   border: none;
   background-color: #A5C9CA;
 }
+
 @keyframes slide-in-right {
   from {
     transform: translateX(100%);
   }
+
   to {
     transform: translateX(0);
   }
@@ -25,4 +27,3 @@
 #modalbody {
   width: 25rem;
 }
-
