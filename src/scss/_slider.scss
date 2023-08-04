@@ -1,0 +1,135 @@
+.react-bootstrap-carousel {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.react-bootstrap-carousel .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.react-bootstrap-carousel .carousel-item img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.react-bootstrap-carousel .carousel-control-prev,
+.react-bootstrap-carousel .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.react-bootstrap-carousel .carousel-control-prev {
+    left: -100px;
+}
+
+.react-bootstrap-carousel .carousel-control-next {
+    right: -100px;
+}
+
+.react-bootstrap-carousel .carousel-control-prev:hover,
+.react-bootstrap-carousel .carousel-control-next:hover {
+    opacity: 1;
+}
+
+.react-bootstrap-carousel .carousel-control-prev .carousel-control-prev-icon,
+.react-bootstrap-carousel .carousel-control-next .carousel-control-next-icon {
+    display: none;
+}
+
+.react-bootstrap-carousel .carousel-control-prev:hover .carousel-control-prev-icon,
+.react-bootstrap-carousel .carousel-control-next:hover .carousel-control-next-icon {
+    display: block;
+}
+
+.react-bootstrap-carousel .carousel-control-prev .carousel-control-prev-icon {
+    margin-left: 10px;
+}
+
+.react-bootstrap-carousel .carousel-control-next .carousel-control-next-icon {
+    margin-right: 10px;
+}
+
+.react-bootstrap-carousel .carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.react-bootstrap-carousel .carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.5;
+    margin-right: 5px;
+}
+
+.react-bootstrap-carousel .carousel-indicators .active {
+    opacity: 1;
+}
+
+.react-bootstrap-carousel {
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.carousel {
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.carousel-item {
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.5s;
+}
+
+.carousel-item.active {
+    transform: scale(1.1);
+}
+
+.carousel-item:hover {
+    transform: scale(1.05);
+}
+
+/* ... Tu otro CSS ... */
+
+.carousel-text {
+    font-size: 25px;
+    line-height: 1.5;
+    color: white;
+    padding: 20px;
+    background-color: #ff6600;
+    background-image: linear-gradient(to right, #ff6600, #ff9966);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%;
+    white-space: normal;
+}
+
+.carousel-item.active .carousel-text {
+    transform: scale(1.1);
+    padding: 30px;
+}
+
+.carousel-item.next .carousel-text,
+.carousel-item.prev .carousel-text {
+    transform: scale(0.9);
+}
