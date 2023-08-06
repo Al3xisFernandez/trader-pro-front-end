@@ -122,3 +122,46 @@
         height: 300px;
     }
 }
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .react-bootstrap-carousel {
+        max-width: 85%;
+        height: 250px;
+    }
+
+    .carousel-item {
+        padding: 15px;
+    }
+
+    .carousel-text {
+        font-size: 16px;
+        font-weight: 900;
+        padding: 20px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 575px) {
+    .react-bootstrap-carousel {
+        max-width: 80%;
+        height: 200px;
+    }
+
+    .carousel-item {
+        padding: 10px;
+    }
+
+    .carousel-text {
+        font-size: 14px;
+        font-weight: 900;
+        padding: 15px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel-indicators {
+        margin-top: 20px;
+       
+    }
+}
