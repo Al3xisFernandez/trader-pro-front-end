@@ -13,7 +13,6 @@ function Navb() {
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container id="navbar-container">
         <Navbar.Brand id="navbar-logo" href="/">
-          {" "}
           <img src={require("../../images/logo.png")} alt="TRADER PRO" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

@@ -1,6 +1,5 @@
 import HomeBanner from "../home/home-comp";
 import CursosBoxes from "../cursosBoxes/cursos"
-import CarouselComponent from "../slider/Slider";
 // import NoBoxes from "../cursosBoxes/NoBoxes";
 
 const Inicio = () => {
@@ -11,7 +10,6 @@ const Inicio = () => {
       <HomeBanner />
       {/* {isLoggedIn ? ( */}
             {/* <> */}
-              <CarouselComponent />
               <CursosBoxes />
             {/* </> */}
           {/* ) : ( */}

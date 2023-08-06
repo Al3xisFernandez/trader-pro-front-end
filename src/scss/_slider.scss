@@ -14,81 +14,10 @@
     max-height: 100%;
 }
 
-.react-bootstrap-carousel .carousel-control-prev,
-.react-bootstrap-carousel .carousel-control-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 5;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #fff;
-    opacity: 0.5;
-    cursor: pointer;
-}
-
-.react-bootstrap-carousel .carousel-control-prev {
-    left: -100px;
-}
-
-.react-bootstrap-carousel .carousel-control-next {
-    right: -100px;
-}
-
-.react-bootstrap-carousel .carousel-control-prev:hover,
-.react-bootstrap-carousel .carousel-control-next:hover {
-    opacity: 1;
-}
-
-.react-bootstrap-carousel .carousel-control-prev .carousel-control-prev-icon,
-.react-bootstrap-carousel .carousel-control-next .carousel-control-next-icon {
-    display: none;
-}
-
-.react-bootstrap-carousel .carousel-control-prev:hover .carousel-control-prev-icon,
-.react-bootstrap-carousel .carousel-control-next:hover .carousel-control-next-icon {
-    display: block;
-}
-
-.react-bootstrap-carousel .carousel-control-prev .carousel-control-prev-icon {
-    margin-left: 10px;
-}
-
-.react-bootstrap-carousel .carousel-control-next .carousel-control-next-icon {
-    margin-right: 10px;
-}
-
-.react-bootstrap-carousel .carousel-indicators {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.react-bootstrap-carousel .carousel-indicators li {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #fff;
-    opacity: 0.5;
-    margin-right: 5px;
-}
-
-.react-bootstrap-carousel .carousel-indicators .active {
-    opacity: 1;
-}
-
-.react-bootstrap-carousel {
+.react-bootstrap-carousel .carousel {
     border-radius: 15px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-}
-
-.carousel {
-    border-radius: 15px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    background-color: none;
 }
 
 .carousel-item {
@@ -105,15 +34,19 @@
     transform: scale(1.05);
 }
 
-/* ... Tu otro CSS ... */
-
 .carousel-text {
     font-size: 25px;
+    font-weight: 900;
     line-height: 1.5;
     color: white;
     padding: 20px;
-    background-color: #ff6600;
-    background-image: linear-gradient(to right, #ff6600, #ff9966);
+    background-image: linear-gradient(to right top,
+            #2c3333,
+            #485555,
+            #657a7a,
+            #84a0a1,
+            #a5c9ca);
+    background-color: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: all 0.5s ease-in-out;
     text-align: center;
@@ -122,6 +55,7 @@
     align-items: center;
     max-height: 100%;
     white-space: normal;
+    margin-top: 10px;
 }
 
 .carousel-item.active .carousel-text {
@@ -132,4 +66,59 @@
 .carousel-item.next .carousel-text,
 .carousel-item.prev .carousel-text {
     transform: scale(0.9);
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .react-bootstrap-carousel {
+        max-width: 90%;
+        height: 300px;
+    }
+
+    .carousel-item {
+        padding: 10px;
+    }
+
+    .carousel-text {
+        font-size: 18px;
+
+        font-weight: 900;
+        padding: 15px;
+        height: 200px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .react-bootstrap-carousel {
+        max-width: 80%;
+        height: 350px;
+    }
+
+    .carousel-item {
+        padding: 20px;
+    }
+
+    .carousel-text {
+        font-size: 20px;
+        font-weight: 900;
+        padding: 25px;
+        height: 250px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .react-bootstrap-carousel {
+        max-width: 70%;
+        height: 400px;
+    }
+
+    .carousel-item {
+        padding: 30px;
+    }
+
+    .carousel-text {
+        font-size: 22px;
+        font-weight: 900;
+        padding: 35px;
+        height: 300px;
+    }
 }

@@ -6,7 +6,7 @@ import React from "react";
    <div className="container text-center">
   <div className="row">
     <div className="col-lg-4 col-md-12">
-      <a href="/Intro" className="btn-a"> <span className="btn-span">Introduccion</span> <i className="btn-i"></i> </a>
+      <a href="/Intro" className="btn-a"> <span className="btn-span">Introduccion al trading</span> <i className="btn-i"></i> </a>
     </div>
     <div className="col-lg-4 col-md-12">
       <a href="/PerfilDeInversor" className="btn-a"> <span className="btn-span">Perfil del InVersor</span> <i className="btn-i"></i> </a>

@@ -1,4 +1,5 @@
 import React from "react";
+import CarouselComponent from "../slider/Slider";
 const HomeBanner = () => {
   return (
     <section>
@@ -15,6 +16,7 @@ const HomeBanner = () => {
             al siguiente nivel
           </p>
         </div>
+        <CarouselComponent />
         <div className="box-area">
           <li></li>
           <li></li>
