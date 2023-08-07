@@ -12,7 +12,6 @@ import Acciones from "./cursos/Acciones";
 import AnalisisTecnico from "./cursos/AnalisisTecnico";
 import InstrumentosFinancieros from "./cursos/InstrumentosFinancieros";
 import OpcionesFinancieras from "./cursos/OpcionesFinancieras";
-import PerfilDeInversor from "./cursos/PerfilDeInversor";
 import VelasJaponesas from "./cursos/VelasJaponesas";
 import Tendencias from "./cursos/Tendencias";
 import RegisterModal from "./modal/modal-login";
@@ -33,7 +32,6 @@ const Pages = () => {
                 <Route path="/AnalisisTecnico" exact component={AnalisisTecnico} />
                 <Route path="/InstrumentosFinancieros" exact component={InstrumentosFinancieros} />
                 <Route path="/OpcionesFinancieras" exact component={OpcionesFinancieras} />
-                <Route path="/PerfilDeInversor" exact component={PerfilDeInversor} />
                 <Route path="/VelasJaponesas" exact component={VelasJaponesas} />
                 <Route path="/Tendencias" exact component={Tendencias} />
                 <Route path="/RegisterModal" exact component={RegisterModal} />

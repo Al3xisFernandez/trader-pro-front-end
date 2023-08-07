@@ -8,17 +8,14 @@ import React from "react";
     <div className="col-lg-4 col-md-12">
       <a href="/Intro" className="btn-a"> <span className="btn-span">Introduccion al trading</span> <i className="btn-i"></i> </a>
     </div>
-    <div className="col-lg-4 col-md-12">
-      <a href="/PerfilDeInversor" className="btn-a"> <span className="btn-span">Perfil del InVersor</span> <i className="btn-i"></i> </a>
+    <div className="col-lg-3 col-md-12">
+    <a href="/InstrumentosFinancieros" className="btn-a"> <span className="btn-span">Instrumentos Financieros</span> <i className="btn-i"></i> </a>
     </div>
     <div className="col-lg-4 col-md-12">
     <a href="/AbrirCuentaEnBroker" className="btn-a"> <span className="btn-span">Abrir cuenta en un broker</span> <i className="btn-i"></i> </a>
     </div>
   </div>
   <div className="row">
-    <div className="col-lg-3 col-md-12">
-    <a href="/InstrumentosFinancieros" className="btn-a"> <span className="btn-span">Instrumentos Financieros</span> <i className="btn-i"></i> </a>
-    </div>
     <div className="col-lg-6 col-md-12">
     <a href="/AnalisisTecnico" className="btn-a"> <span className="btn-span">Analisis Tecnico</span> <i className="btn-i"></i> </a>
     </div>
