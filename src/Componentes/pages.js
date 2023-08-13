@@ -7,7 +7,7 @@ import QuienesSomos from "./QuienesSomos/QuienesSomos";
 import SignUp from "./login/SignUp";
 import Contactenos from "./Contactenos/Contactenos";
 import Intro from "./cursos/Intro";
-import AbrirCuentaEnBroker from "./cursos/AbrirCuentaEnBroker";
+import Estrategiasdetrading from "./cursos/Estrategiasdetrading";
 import Acciones from "./cursos/Acciones";
 import AnalisisTecnico from "./cursos/AnalisisTecnico";
 import InstrumentosFinancieros from "./cursos/InstrumentosFinancieros";
@@ -27,7 +27,7 @@ const Pages = () => {
                 <Route path="/QuienesSomos" exact component={QuienesSomos} />
                 <Route path="/Contactenos" exact component={Contactenos} />
                 <Route path="/Intro" exact component={Intro} />
-                <Route path="/AbrirCuentaEnBroker" exact component={AbrirCuentaEnBroker} />
+                <Route path="/Estrategiasdetrading" exact component={Estrategiasdetrading} />
                 <Route path="/Acciones" exact component={Acciones} />
                 <Route path="/AnalisisTecnico" exact component={AnalisisTecnico} />
                 <Route path="/InstrumentosFinancieros" exact component={InstrumentosFinancieros} />

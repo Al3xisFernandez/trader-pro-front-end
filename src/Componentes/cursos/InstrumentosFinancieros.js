@@ -28,7 +28,7 @@ const InstrumentosFinancieros = () => {
         una opción popular para aquellos que desean realizar operaciones
         inmediatas y no esperar a futuras fechas de vencimiento. Es una forma
         sencilla y directa de comerciar con criptomonedas.
-      </p>{" "}
+      </p>
       <br />
       <h1>Trading con margen</h1>
       <p>
@@ -61,6 +61,7 @@ const InstrumentosFinancieros = () => {
         entrega física, donde se realiza un intercambio directo del activo
         subyacente, como barriles de petróleo, por ejemplo.
       </p>
+      <br />
       <h1>Trading de futuros perpetuos</h1>
       <p>
         Los contratos de futuros perpetuos son una variante de los contratos de
@@ -76,9 +77,41 @@ const InstrumentosFinancieros = () => {
         es inferior al del mercado spot, la tasa de financiación es negativa, y
         los vendedores pagan a los compradores para alentar un aumento del
         precio del contrato. Estos contratos son especialmente populares entre
-        los traders de Bitcoin y otras criptomonedas. 
+        los traders de Bitcoin y otras criptomonedas.
       </p>
-      <h1></h1>
+      <br />
+      <h1>Forex</h1>
+      <p>
+        El mercado de divisas, también conocido como Forex o FX, es donde los
+        traders intercambian monedas de diferentes países. Su función principal
+        es determinar las tasas de cambio entre diversas divisas a nivel global.
+        Aunque las divisas a menudo se consideran activos seguros, pueden
+        experimentar fluctuaciones significativas debido a la oferta y la
+        demanda, así como a factores económicos, comerciales, y geopolíticos. En
+        el mercado Forex, diversos participantes como bancos de inversión,
+        bancos centrales, empresas comerciales, fondos de inversión y traders
+        minoristas, realizan transacciones con pares de divisas. Este mercado
+        también facilita la conversión de monedas para liquidar intercambios
+        comerciales internacionales. Los traders de Forex emplean estrategias
+        como el day trading y el "scalping" con apalancamiento para maximizar
+        sus ganancias. El mercado Forex es un componente esencial de la economía
+        global y se considera el mercado financiero más grande y líquido del
+        mundo.
+      </p>
+      <br />
+      <h1>Leveraged tokens</h1>
+      <p>
+        Los "leveraged tokens" son activos intercambiables que ofrecen
+        exposición con apalancamiento al precio de una criptomoneda, sin las
+        obligaciones tradicionales asociadas al manejo de posiciones
+        apalancadas, como el margen, el colateral, la financiación y la
+        liquidación. Estos tokens innovadores surgieron gracias a la tecnología
+        blockchain y fueron introducidos por el exchange de derivados FTX. La
+        esencia de los "leveraged tokens" es tokenizar posiciones con
+        apalancamiento, representando futuros perpetuos y derivando su valor de
+        esos contratos derivados. Proporcionan una manera sencilla de obtener
+        exposición con apalancamiento en criptomonedas.
+      </p>
     </div>
   );
 };

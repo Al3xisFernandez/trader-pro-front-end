@@ -25,9 +25,8 @@ h1 {
 p {
   font-size: 24px;
   line-height: 1.6;
-  color: #fff
+  color: #fff;
 }
-
 
 .image-container {
   position: relative;
@@ -107,7 +106,34 @@ p {
   font-size: 24px;
   line-height: 1.6;
 }
+.Estrategiasdetrading {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  animation: fadeIn 1s;
+}
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+p {
+  font-size: 24px;
+  line-height: 1.6;
+}
 
 .OpcionesFinancieras {
   color: white;
@@ -116,7 +142,6 @@ p {
   text-align: justify;
   text-justify: inter-word;
 }
-
 
 .Tendencias {
   color: white;
