@@ -262,36 +262,125 @@ const Estrategiasdetrading = () => {
       <br />
       <h1>Teoria de las Ondas de Elliot</h1>
       <p>
-        La Teoría de las Ondas de Elliott (TOE) es un principio utilizado en el
-        análisis técnico que sugiere que los movimientos del mercado siguen
-        patrones basados en la psicología de masas.
-        <br /> Ralph Nelson Elliott propuso esta teoría en los años 30,
-        basándose en ciclos de psicología alcista y bajista. <br />
-        La TOE sostiene que los mercados crean patrones de ondas impulsivas y
-        correctivas, siguiendo una secuencia de ciclos. Sin embargo, su
-        aplicación es subjetiva y puede haber varias interpretaciones de los
-        patrones.
-        <br /> Consta de un patrón básico de ocho ondas: <br />
-        Cinco de impulso y tres correctivas. Estas ondas pueden ser fractales,
-        repitiéndose en diferentes marcos temporales. Las ondas de impulso se
-        mueven a favor de la tendencia principal, mientras que las correctivas
-        se mueven en contra.
-        <br /> Las ondas impulsivas consisten en patrones de cinco ondas más
-        pequeñas, y las correctivas generalmente se componen de tres ondas (A, B
-        y C). El debate sobre la efectividad de la TOE es constante. Algunos la
-        encuentran útil para predecir tendencias, mientras que otros la critican
-        por su naturaleza subjetiva y falta de reglas claras. <br />
-        La TOE no es un indicador de análisis técnico, sino una teoría que puede
-        combinarse con otros enfoques. Algunos traders exitosos la utilizan en
-        combinación con indicadores técnicos para aumentar la precisión. En
-        conclusión, la Teoría de las Ondas de Elliott se basa en patrones de
-        psicología de masas en los mercados financieros. Aunque es subjetiva y
-        requiere práctica, ha sido utilizada por muchos inversores y traders con
-        éxito.
+        Las ondas de Elliott son un método de análisis técnico que se utiliza
+        para identificar los ciclos de precios en los mercados financieros. El
+        método fue desarrollado por Ralph Nelson Elliott a principios del siglo
+        XX, y se basa en la idea de que los mercados financieros se mueven en
+        ciclos de ocho ondas. <br />
+        Las ondas de Elliott se dividen en dos categorías: ondas impulsivas y
+        ondas correctivas. <br /> <br />
+        Las ondas impulsivas son las ondas que impulsan el precio en una
+        dirección, mientras que las ondas correctivas son las ondas que frenan
+        el precio y lo llevan de regreso a la tendencia principal. <br />
+        Las ondas impulsivas se dividen en cinco ondas: 1, 2, 3, 4 y 5. La onda
+        1 es la primera onda de la tendencia, la onda 2 es una corrección de la
+        onda 1, la onda 3 es la onda más larga de la tendencia, la onda 4 es
+        otra corrección, y la onda 5 es la última onda de la tendencia. <br />
+        <br />
+        Las ondas correctivas se dividen en tres ondas: A, B y C. La onda A es
+        la primera onda de la corrección, la onda B es una corrección de la onda
+        A, y la onda C es la última onda de la corrección.
       </p>
       <br />
       <h1>El método Wyckoff</h1>
-      <p></p>
+      <p>
+        El método Wyckoff es un enfoque de análisis técnico de los mercados
+        financieros que se basa en identificar la oferta y la demanda a través
+        del estudio del precio y el volumen. El método fue desarrollado por
+        Richard Wyckoff a principios del siglo XX, y se ha convertido en una de
+        las técnicas de análisis técnico más populares.
+        <br /> El método Wyckoff se basa en la idea de que los precios de los
+        activos financieros reflejan la interacción entre los compradores y los
+        vendedores. Cuando hay más compradores que vendedores, el precio sube.
+        Cuando hay más vendedores que compradores, el precio baja. El método
+        Wyckoff busca identificar los puntos en los que hay un cambio en la
+        oferta y la demanda, ya que estos puntos suelen ser seguidos por
+        movimientos importantes en el precio. <br />
+        El método Wyckoff se divide en cinco fases:
+        <br />
+        <br />
+        <ol>
+          <li>
+            Acumulación: Esta es la fase en la que los operadores
+            institucionales están acumulando acciones. Esto suele ocurrir
+            después de una tendencia bajista, cuando los precios son bajos y la
+            demanda es escasa.
+          </li>
+          <br />
+          <li>
+            Distribución: Esta es la fase en la que los operadores
+            institucionales están vendiendo acciones. Esto suele ocurrir después
+            de una tendencia alcista, cuando los precios son altos y la demanda
+            es abundante.
+          </li>
+          <br />
+          <li>
+            Congestión: Esta es la fase en la que los precios se consolidan
+            después de una tendencia alcista o bajista. Es una fase de descanso
+            para los operadores, y es un buen momento para recopilar información
+            para tomar decisiones comerciales.
+          </li>
+          <br />
+          <li>
+            Ruptura: Esta es la fase en la que los precios rompen con la
+            congestión y comienzan una nueva tendencia.
+          </li>
+          <br />
+          <li>
+            Movimiento: Esta es la fase en la que los precios se mueven en la
+            dirección de la nueva tendencia.
+          </li>
+        </ol>
+        <br />
+        El método Wyckoff consta de tres leyes fundamentales: <br />
+        <br />
+        <ul>
+          <li>
+            Ley de oferta y demanda, esta ley afirma que los precios suben
+            cuando la demanda es superior a la oferta, y caen cuando se da la
+            situación contraria.
+            <br />
+            Demanda &gt; Oferta = Subida del precio
+            <br />
+            Demanda &lt; Oferta = Caída del precio
+            <br /> Demanda = Oferta = No hay cambios significativos en el precio
+            (baja volatilidad)
+          </li>
+          <br />
+          <li>
+            La ley de causa y efecto: El movimiento del precio es causado por un
+            cambio en la oferta y la demanda. El tamaño del movimiento del
+            precio es proporcional al tamaño del cambio en la oferta y la
+            demanda.
+          </li>
+          <br />
+          <li>
+            La ley del esfuerzo versus el resultado: El esfuerzo realizado por
+            los operadores para mover el precio es proporcional al resultado del
+            movimiento del precio. Cuanto más esfuerzo se realiza, mayor será el
+            resultado.
+          </li>
+        </ul>
+      </p>
+      <br />
+      <h1>Hacer Hold</h1>
+      <p>
+        La estrategia de "compra y hold" implica adquirir un activo y mantenerlo
+        a largo plazo, sin importar las condiciones del mercado. Es una
+        estrategia pasiva en la que los inversores no realizan operaciones
+        activas. En el contexto de las criptomonedas, esto se conoce como
+        "HODLing". Los inversores que siguen esta estrategia optan por conservar
+        sus activos durante años en lugar de realizar operaciones frecuentes.
+        Esta estrategia es adecuada para aquellos que prefieren una inversión
+        sin intervención constante, ya que no necesitan preocuparse por las
+        fluctuaciones a corto plazo ni por los impuestos sobre las ganancias.
+        Sin embargo, requiere paciencia y la creencia de que el activo mantendrá
+        su valor a lo largo del tiempo. Es una forma de inversión que se basa en
+        la confianza en el potencial a largo plazo del activo y en la creencia
+        de que, a pesar de las fluctuaciones, su valor general aumentará con el
+        tiempo. Historicamente un Holder de bitcoin siempre obtuvo ganancias de
+        este activo.
+      </p>
     </div>
   );
 };
